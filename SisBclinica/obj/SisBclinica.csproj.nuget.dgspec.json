@@ -1,0 +1,152 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SisBclinica\\SisBclinica.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\DataLayer\\DataLayer.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\DataLayer\\DataLayer.csproj",
+        "projectName": "DataLayer",
+        "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\DataLayer\\DataLayer.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\General2.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\General2.csproj",
+        "projectName": "General2",
+        "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\General2.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\DataLayer\\DataLayer.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\Reportes\\Reportes.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\Reportes\\Reportes.csproj",
+        "projectName": "Reportes",
+        "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\Reportes\\Reportes.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SessionMannager\\SessionMannager.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SessionMannager\\SessionMannager.csproj",
+        "projectName": "SessionMannager",
+        "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SessionMannager\\SessionMannager.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\DataLayer\\DataLayer.csproj"
+              },
+              "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\General2.csproj": {
+                "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\General2.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SisBclinica\\SisBclinica.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SisBclinica\\SisBclinica.csproj",
+        "projectName": "SisBclinica",
+        "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SisBclinica\\SisBclinica.csproj",
+        "packagesPath": "C:\\Users\\Kike\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SisBclinica\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kike\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\General2.csproj": {
+                "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\General2.csproj"
+              },
+              "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\Reportes\\Reportes.csproj": {
+                "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\Reportes\\Reportes.csproj"
+              },
+              "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SessionMannager\\SessionMannager.csproj": {
+                "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SessionMannager\\SessionMannager.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

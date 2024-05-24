@@ -1,0 +1,6 @@
+C:\Users\Kike\Desktop\Xprojecto-main\Reportes\bin\Debug\Reportes.dll
+C:\Users\Kike\Desktop\Xprojecto-main\Reportes\bin\Debug\Reportes.pdb
+C:\Users\Kike\Desktop\Xprojecto-main\Reportes\obj\Debug\Reportes.csproj.AssemblyReference.cache
+C:\Users\Kike\Desktop\Xprojecto-main\Reportes\obj\Debug\Reportes.csproj.CoreCompileInputs.cache
+C:\Users\Kike\Desktop\Xprojecto-main\Reportes\obj\Debug\Reportes.dll
+C:\Users\Kike\Desktop\Xprojecto-main\Reportes\obj\Debug\Reportes.pdb

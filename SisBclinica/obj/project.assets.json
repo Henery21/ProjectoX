@@ -1,0 +1,155 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0-windows7.0": {
+      "DataLayer/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/DataLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataLayer.dll": {}
+        }
+      },
+      "General2/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "DataLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/General2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/General2.dll": {}
+        }
+      },
+      "Reportes/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Reportes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reportes.dll": {}
+        }
+      },
+      "SessionMannager/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "DataLayer": "1.0.0",
+          "General2": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SessionMannager.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SessionMannager.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DataLayer/1.0.0": {
+      "type": "project",
+      "path": "../DataLayer/DataLayer.csproj",
+      "msbuildProject": "../DataLayer/DataLayer.csproj"
+    },
+    "General2/1.0.0": {
+      "type": "project",
+      "path": "../General2/General2.csproj",
+      "msbuildProject": "../General2/General2.csproj"
+    },
+    "Reportes/1.0.0": {
+      "type": "project",
+      "path": "../Reportes/Reportes.csproj",
+      "msbuildProject": "../Reportes/Reportes.csproj"
+    },
+    "SessionMannager/1.0.0": {
+      "type": "project",
+      "path": "../SessionMannager/SessionMannager.csproj",
+      "msbuildProject": "../SessionMannager/SessionMannager.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0-windows7.0": [
+      "General2 >= 1.0.0",
+      "Reportes >= 1.0.0",
+      "SessionMannager >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Kike\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SisBclinica\\SisBclinica.csproj",
+      "projectName": "SisBclinica",
+      "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SisBclinica\\SisBclinica.csproj",
+      "packagesPath": "C:\\Users\\Kike\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SisBclinica\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Kike\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "projectReferences": {
+            "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\General2.csproj": {
+              "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\General2.csproj"
+            },
+            "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\Reportes\\Reportes.csproj": {
+              "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\Reportes\\Reportes.csproj"
+            },
+            "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SessionMannager\\SessionMannager.csproj": {
+              "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SessionMannager\\SessionMannager.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0-windows7.0": {
+        "targetAlias": "net8.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

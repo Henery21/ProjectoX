@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace General2.CLS
 {
+    //probando el commit desde visual 
     internal class HClinico
     {
         String _IDHistorialClinico;

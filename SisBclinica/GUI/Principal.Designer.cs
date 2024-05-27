@@ -49,7 +49,7 @@
             btnClose = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
-            pictureBox1 = new PictureBox();
+            barraauperior = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
@@ -64,7 +64,7 @@
             ((System.ComponentModel.ISupportInitialize)btnClose).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barraauperior).BeginInit();
             SuspendLayout();
             // 
             // pictureBox2
@@ -308,14 +308,15 @@
             pictureBox3.TabStop = false;
             pictureBox3.Click += pictureBox3_Click;
             // 
-            // pictureBox1
+            // barraauperior
             // 
-            pictureBox1.BackColor = Color.FromArgb(122, 162, 227);
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(900, 35);
-            pictureBox1.TabIndex = 3;
-            pictureBox1.TabStop = false;
+            barraauperior.BackColor = Color.FromArgb(122, 162, 227);
+            barraauperior.Location = new Point(143, 0);
+            barraauperior.Name = "barraauperior";
+            barraauperior.Size = new Size(65535, 35);
+            barraauperior.SizeMode = PictureBoxSizeMode.AutoSize;
+            barraauperior.TabIndex = 3;
+            barraauperior.TabStop = false;
             // 
             // Principal
             // 
@@ -343,7 +344,7 @@
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox2);
             Controls.Add(btnClose);
-            Controls.Add(pictureBox1);
+            Controls.Add(barraauperior);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Principal";
@@ -362,8 +363,9 @@
             ((System.ComponentModel.ISupportInitialize)btnClose).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barraauperior).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -387,6 +389,6 @@
         private PictureBox btnClose;
         private PictureBox pictureBox4;
         private PictureBox pictureBox3;
-        private PictureBox pictureBox1;
+        private PictureBox barraauperior;
     }
 }

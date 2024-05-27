@@ -47,3 +47,4 @@ C:\Users\Kike\Desktop\Xprojecto-main\SisBclinica\bin\Debug\net8.0-windows\K4os.H
 C:\Users\Kike\Desktop\Xprojecto-main\SisBclinica\obj\Debug\net8.0-windows\SisBclin.E37ABC33.Up2Date
 C:\Users\Kike\Desktop\Xprojecto-main\SisBclinica\bin\Debug\net8.0-windows\General2.dll.config
 C:\Users\Kike\Desktop\Xprojecto-main\SisBclinica\bin\Debug\net8.0-windows\SessionMannager.dll.config
+C:\Users\Kike\Desktop\Xprojecto-main\SisBclinica\obj\Debug\net8.0-windows\SisBclinica.sourcelink.json

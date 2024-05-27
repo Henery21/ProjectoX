@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2B27E75E-B44F-4F6E-B581-749E502971E4}|SisBclinica\\SisBclinica.csproj|c:\\users\\kike\\desktop\\xprojecto-main\\sisbclinica\\gui\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B27E75E-B44F-4F6E-B581-749E502971E4}|SisBclinica\\SisBclinica.csproj|solutionrelative:sisbclinica\\gui\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,6 +39,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Principal.cs",
+              "DocumentMoniker": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SisBclinica\\GUI\\Principal.cs",
+              "RelativeDocumentMoniker": "SisBclinica\\GUI\\Principal.cs",
+              "ToolTip": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SisBclinica\\GUI\\Principal.cs",
+              "RelativeToolTip": "SisBclinica\\GUI\\Principal.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAAwEMAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T22:13:40.579Z",
+              "EditorCaption": ""
             }
           ]
         }

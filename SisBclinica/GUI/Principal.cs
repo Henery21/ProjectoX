@@ -65,5 +65,6 @@ namespace SisBclinica.GUI
             Application.Exit();
         }
 
+       
     }
 }

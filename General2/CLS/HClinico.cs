@@ -57,7 +57,12 @@ namespace General2.CLS
 
             try
             {
-                Sentencia = @"";
+                Sentencia = @"UPDATE productos SET IDHistorialClinico = '" + _IDHistorialClinico +
+                    "', IDPaciente = '" + _IDPaciente +
+                    "', Afecciones = '" + _Afecciones +
+                    "', Observaciones = '" + _Observaciones +
+                    "', Estado = '" + _Estado +
+                    "' WHERE condicion_de_actualizacion;"; ;
             }
             catch (Exception)
             {

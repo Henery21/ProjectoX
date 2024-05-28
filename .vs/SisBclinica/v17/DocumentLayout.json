@@ -7,11 +7,11 @@
       "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\cls\\hconsulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\kike\\desktop\\xprojecto-main\\general2\\gui\\historialconsulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|C:\\Users\\Kike\\Desktop\\Xprojecto-main\\general2\\gui\\historialconsulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\gui\\historialconsulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\kike\\desktop\\xprojecto-main\\general2\\cls\\infocitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|C:\\Users\\Kike\\Desktop\\Xprojecto-main\\general2\\cls\\infocitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\cls\\infocitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -56,7 +56,7 @@
               "RelativeDocumentMoniker": "General2\\CLS\\HConsulta.cs",
               "ToolTip": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\CLS\\HConsulta.cs",
               "RelativeToolTip": "General2\\CLS\\HConsulta.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAgwBwAAABIAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAA1wBwAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T00:42:28.005Z",
               "EditorCaption": ""
@@ -70,8 +70,7 @@
               "ToolTip": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\GUI\\HistorialConsulta.cs [Dise\u00F1o]",
               "RelativeToolTip": "General2\\GUI\\HistorialConsulta.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T00:41:49.846Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-05-28T00:41:49.846Z"
             },
             {
               "$type": "Document",
@@ -83,8 +82,7 @@
               "RelativeToolTip": "General2\\CLS\\infoCitas.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T00:38:36.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T00:38:36.432Z"
             }
           ]
         }

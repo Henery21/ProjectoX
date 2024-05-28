@@ -3,48 +3,50 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 /*
- IDPaciente int AI PK 
+IDEmpleado int AI PK 
 IDDireccion int 
+IDCargo int 
+IDPermiso int 
 Nombres varchar(255) 
 Apellidos varchar(255) 
 Telefono varchar(20) 
 Correo varchar(255) 
 Direccion varchar(255) 
-FechaNacimiento date 
+Puesto varchar(255) 
 Sexo enum('Masculino','Femenino') 
-Estado enum('Activo','Inactivo') 
-IDTratamiento
- */
-
+Estado
+*/
 namespace General2.CLS
 {
-    internal class InfoPacientes
+    internal class Infoempleado
     {
-        String _IDpaciente;
+        String _IDEmpleado;
         String _IDDireccion;
+        String _IDCargo;
+        String _IDPErmiso;
         String _Nombres;
         String _Apellidos;
         String _Telefono;
         String _Correo;
         String _Direccion;
-        String _FechaNacimiento;
+        String _Puesto;
         String _Sexo;
         String _Estado;
-        String _IDtratamiento;
 
-        public string IDpaciente { get => _IDpaciente; set => _IDpaciente = value; }
+        public string IDEmpleado { get => _IDEmpleado; set => _IDEmpleado = value; }
         public string IDDireccion { get => _IDDireccion; set => _IDDireccion = value; }
+        public string IDCargo { get => _IDCargo; set => _IDCargo = value; }
+        public string IDPErmiso { get => _IDPErmiso; set => _IDPErmiso = value; }
         public string Nombres { get => _Nombres; set => _Nombres = value; }
         public string Apellidos { get => _Apellidos; set => _Apellidos = value; }
         public string Telefono { get => _Telefono; set => _Telefono = value; }
         public string Correo { get => _Correo; set => _Correo = value; }
         public string Direccion { get => _Direccion; set => _Direccion = value; }
-        public string FechaNacimiento { get => _FechaNacimiento; set => _FechaNacimiento = value; }
+        public string Puesto { get => _Puesto; set => _Puesto = value; }
         public string Sexo { get => _Sexo; set => _Sexo = value; }
         public string Estado { get => _Estado; set => _Estado = value; }
-        public string IDtratamiento { get => _IDtratamiento; set => _IDtratamiento = value; }
-
 
         public Boolean Insertar()
         {
@@ -80,7 +82,7 @@ namespace General2.CLS
 
             try
             {
-                Sentencia = @""; 
+                Sentencia = @"";
             }
             catch (Exception)
             {

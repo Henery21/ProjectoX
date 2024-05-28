@@ -99,7 +99,12 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="CLS\HClinico.cs" />
+    <Compile Include="CLS\HConsulta.cs" />
+    <Compile Include="CLS\infoCitas.cs" />
+    <Compile Include="CLS\Infoempleado.cs" />
     <Compile Include="CLS\InfoPacientes.cs" />
+    <Compile Include="CLS\infoUsuarios.cs" />
+    <Compile Include="CLS\ListaCitas.cs" />
     <Compile Include="GUI\ConsultaTratamiento.cs">
       <SubType>Form</SubType>
     </Compile>

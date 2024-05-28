@@ -60,7 +60,7 @@ namespace General2.GUI
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(117, 118);
+            this.dateTimePicker2.Location = new System.Drawing.Point(141, 119);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(128, 20);
             this.dateTimePicker2.TabIndex = 170;

@@ -1,4 +1,7 @@
 leer importante solo modificar elmensaje aqui del commit si hay alg que agregaron 
 
+solo vuelvo a intentar
+
+
 git commit -m "Mensajeimporta " solpo es para agragar todas las corrciones con mensjae aporpiado 
 este se ocupa 

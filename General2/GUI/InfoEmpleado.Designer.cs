@@ -223,6 +223,10 @@ namespace General2.GUI
             // cbPuesto
             // 
             this.cbPuesto.FormattingEnabled = true;
+            this.cbPuesto.Items.AddRange(new object[] {
+            "Doctor",
+            "Enfermero",
+            "Resepcionista"});
             this.cbPuesto.Location = new System.Drawing.Point(112, 224);
             this.cbPuesto.Name = "cbPuesto";
             this.cbPuesto.Size = new System.Drawing.Size(104, 21);
@@ -231,6 +235,9 @@ namespace General2.GUI
             // cbSexo
             // 
             this.cbSexo.FormattingEnabled = true;
+            this.cbSexo.Items.AddRange(new object[] {
+            "Masculino",
+            "Femenino"});
             this.cbSexo.Location = new System.Drawing.Point(394, 225);
             this.cbSexo.Name = "cbSexo";
             this.cbSexo.Size = new System.Drawing.Size(104, 21);
@@ -249,6 +256,9 @@ namespace General2.GUI
             // cbEstado
             // 
             this.cbEstado.FormattingEnabled = true;
+            this.cbEstado.Items.AddRange(new object[] {
+            "Activo ",
+            "Inactivo"});
             this.cbEstado.Location = new System.Drawing.Point(112, 273);
             this.cbEstado.Name = "cbEstado";
             this.cbEstado.Size = new System.Drawing.Size(104, 21);

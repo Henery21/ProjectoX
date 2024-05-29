@@ -270,7 +270,7 @@
             // 
             plPrincipal.Location = new Point(157, 42);
             plPrincipal.Name = "plPrincipal";
-            plPrincipal.Size = new Size(638, 734);
+            plPrincipal.Size = new Size(742, 734);
             plPrincipal.TabIndex = 26;
             // 
             // btnClose
@@ -323,7 +323,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(248, 246, 227);
-            ClientSize = new Size(823, 788);
+            ClientSize = new Size(932, 788);
             Controls.Add(pictureBox3);
             Controls.Add(plPrincipal);
             Controls.Add(btnCitas);

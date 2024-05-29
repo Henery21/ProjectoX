@@ -48,6 +48,8 @@ namespace General2.CLS
         public string Sexo { get => _Sexo; set => _Sexo = value; }
         public string Estado { get => _Estado; set => _Estado = value; }
 
+
+        
         public Boolean Insertar()
         {
             Boolean resultado = false;

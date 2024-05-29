@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SisBclinica\\SisBclinica.csproj": {}
+    "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\SisBclinica\\SisBclinica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\DataLayer\\DataLayer.csproj": {
+    "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\DataLayer\\DataLayer.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\DataLayer\\DataLayer.csproj",
+        "projectPath": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\DataLayer\\DataLayer.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {}
@@ -19,16 +19,16 @@
         "net48": {}
       }
     },
-    "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\General2.csproj": {
+    "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\General2\\General2.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\General2.csproj",
+        "projectUniqueName": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\General2\\General2.csproj",
         "projectName": "General2",
-        "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\General2.csproj",
+        "projectPath": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\General2\\General2.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\DataLayer\\DataLayer.csproj": {
-                "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\DataLayer\\DataLayer.csproj"
+              "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\DataLayer\\DataLayer.csproj"
               }
             }
           }
@@ -38,11 +38,11 @@
         "net48": {}
       }
     },
-    "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\Reportes\\Reportes.csproj": {
+    "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\Reportes\\Reportes.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\Reportes\\Reportes.csproj",
+        "projectUniqueName": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\Reportes\\Reportes.csproj",
         "projectName": "Reportes",
-        "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\Reportes\\Reportes.csproj",
+        "projectPath": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\Reportes\\Reportes.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {}
@@ -53,19 +53,19 @@
         "net48": {}
       }
     },
-    "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SessionMannager\\SessionMannager.csproj": {
+    "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\SessionMannager\\SessionMannager.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SessionMannager\\SessionMannager.csproj",
+        "projectUniqueName": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\SessionMannager\\SessionMannager.csproj",
         "projectName": "SessionMannager",
-        "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SessionMannager\\SessionMannager.csproj",
+        "projectPath": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\SessionMannager\\SessionMannager.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\DataLayer\\DataLayer.csproj": {
-                "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\DataLayer\\DataLayer.csproj"
+              "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\DataLayer\\DataLayer.csproj"
               },
-              "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\General2.csproj": {
-                "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\General2.csproj"
+              "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\General2\\General2.csproj": {
+                "projectPath": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\General2\\General2.csproj"
               }
             }
           }
@@ -75,17 +75,17 @@
         "net48": {}
       }
     },
-    "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SisBclinica\\SisBclinica.csproj": {
+    "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\SisBclinica\\SisBclinica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SisBclinica\\SisBclinica.csproj",
+        "projectUniqueName": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\SisBclinica\\SisBclinica.csproj",
         "projectName": "SisBclinica",
-        "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SisBclinica\\SisBclinica.csproj",
-        "packagesPath": "C:\\Users\\Kike\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SisBclinica\\obj\\",
+        "projectPath": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\SisBclinica\\SisBclinica.csproj",
+        "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\SisBclinica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kike\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,14 +99,14 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\General2.csproj": {
-                "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\General2.csproj"
+              "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\General2\\General2.csproj": {
+                "projectPath": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\General2\\General2.csproj"
               },
-              "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\Reportes\\Reportes.csproj": {
-                "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\Reportes\\Reportes.csproj"
+              "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\Reportes\\Reportes.csproj": {
+                "projectPath": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\Reportes\\Reportes.csproj"
               },
-              "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SessionMannager\\SessionMannager.csproj": {
-                "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\SessionMannager\\SessionMannager.csproj"
+              "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\SessionMannager\\SessionMannager.csproj": {
+                "projectPath": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\SessionMannager\\SessionMannager.csproj"
               }
             }
           }
@@ -115,11 +115,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -144,7 +139,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

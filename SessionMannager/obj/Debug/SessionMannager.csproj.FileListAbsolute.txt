@@ -38,3 +38,43 @@ C:\Users\Kike\Desktop\Xprojecto-main\SessionMannager\bin\Debug\General2.dll
 C:\Users\Kike\Desktop\Xprojecto-main\SessionMannager\bin\Debug\General2.pdb
 C:\Users\Kike\Desktop\Xprojecto-main\SessionMannager\bin\Debug\SessionMannager.dll.config
 C:\Users\Kike\Desktop\Xprojecto-main\SessionMannager\bin\Debug\General2.dll.config
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\SessionMannager.dll.config
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\SessionMannager.dll
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\SessionMannager.pdb
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\DataLayer.dll
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\General2.dll
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\MySql.Data.dll
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\Google.Protobuf.dll
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\ZstdSharp.dll
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\System.Memory.dll
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\System.Buffers.dll
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\System.IO.Pipelines.dll
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\DataLayer.pdb
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\DataLayer.dll.config
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\General2.pdb
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\General2.dll.config
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\MySql.Data.xml
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\Google.Protobuf.pdb
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\Google.Protobuf.xml
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\System.Memory.xml
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\System.Buffers.xml
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\System.IO.Pipelines.xml
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\obj\Debug\SessionMannager.csproj.AssemblyReference.cache
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\obj\Debug\SessionMannager.csproj.CoreCompileInputs.cache
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\obj\Debug\SessionMannager.csproj.CopyComplete
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\obj\Debug\SessionMannager.dll
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\SessionMannager\obj\Debug\SessionMannager.pdb

@@ -51,3 +51,18 @@ C:\Users\Kike\Desktop\Xprojecto-main\General2\obj\Debug\General2.csproj.Up2Date
 C:\Users\Kike\Desktop\Xprojecto-main\General2\bin\Debug\DataLayer.dll
 C:\Users\Kike\Desktop\Xprojecto-main\General2\bin\Debug\DataLayer.pdb
 C:\Users\Kike\Desktop\Xprojecto-main\General2\bin\Debug\DataLayer.dll.config
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\General2\obj\Debug\General2.csproj.AssemblyReference.cache
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\General2\obj\Debug\General2.GUI.ConsultaTratamiento.resources
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\General2\obj\Debug\General2.GUI.Detalletratamiento.resources
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\General2\obj\Debug\General2.GUI.HistorialClinico.resources
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\General2\obj\Debug\General2.GUI.HistorialConsulta.resources
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\General2\obj\Debug\General2.GUI.InfoCita.resources
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\General2\obj\Debug\General2.GUI.InfoEmpleado.resources
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\General2\obj\Debug\General2.GUI.InfoPacientes.resources
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\General2\obj\Debug\General2.GUI.InfoUsuario.resources
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\General2\obj\Debug\General2.GUI.ListaCitas.resources
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\General2\obj\Debug\General2.Properties.Resources.resources
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\General2\obj\Debug\General2.csproj.GenerateResource.cache
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\General2\obj\Debug\General2.csproj.CoreCompileInputs.cache
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\General2\obj\Debug\General2.dll
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\General2\obj\Debug\General2.pdb

@@ -8,7 +8,7 @@ namespace DataLayer
     {
         private readonly string connectionString;
 
-        String _CadenaConexion = "Server=localhost;Port=3306;Database=laboratoriodental;Uid=root;Pwd=root;AllowUserVariables=True;";
+        String _CadenaConexion = "Server=localhost;Port=3306;Database=laboratoriodental;Uid=jperez;Pwd=JuanPerez123;AllowUserVariables=True;";
         protected MySqlConnection _CONEXION = new MySqlConnection();
 
 

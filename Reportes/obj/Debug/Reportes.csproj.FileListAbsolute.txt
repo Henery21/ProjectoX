@@ -4,3 +4,9 @@ C:\Users\Kike\Desktop\Xprojecto-main\Reportes\obj\Debug\Reportes.csproj.Assembly
 C:\Users\Kike\Desktop\Xprojecto-main\Reportes\obj\Debug\Reportes.csproj.CoreCompileInputs.cache
 C:\Users\Kike\Desktop\Xprojecto-main\Reportes\obj\Debug\Reportes.dll
 C:\Users\Kike\Desktop\Xprojecto-main\Reportes\obj\Debug\Reportes.pdb
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\Reportes\bin\Debug\Reportes.dll
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\Reportes\bin\Debug\Reportes.pdb
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\Reportes\obj\Debug\Reportes.csproj.AssemblyReference.cache
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\Reportes\obj\Debug\Reportes.csproj.CoreCompileInputs.cache
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\Reportes\obj\Debug\Reportes.dll
+C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\Reportes\obj\Debug\Reportes.pdb

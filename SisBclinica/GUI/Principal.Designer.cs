@@ -270,14 +270,14 @@
             // 
             plPrincipal.Location = new Point(157, 42);
             plPrincipal.Name = "plPrincipal";
-            plPrincipal.Size = new Size(735, 650);
+            plPrincipal.Size = new Size(638, 734);
             plPrincipal.TabIndex = 26;
             // 
             // btnClose
             // 
             btnClose.BackColor = Color.FromArgb(106, 212, 221);
             btnClose.Image = (Image)resources.GetObject("btnClose.Image");
-            btnClose.Location = new Point(865, 0);
+            btnClose.Location = new Point(760, 0);
             btnClose.Name = "btnClose";
             btnClose.Size = new Size(35, 35);
             btnClose.SizeMode = PictureBoxSizeMode.Zoom;
@@ -300,7 +300,7 @@
             // 
             pictureBox3.BackColor = Color.FromArgb(106, 212, 221);
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(9, 655);
+            pictureBox3.Location = new Point(10, 707);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(35, 35);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -323,7 +323,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(248, 246, 227);
-            ClientSize = new Size(900, 700);
+            ClientSize = new Size(823, 788);
             Controls.Add(pictureBox3);
             Controls.Add(plPrincipal);
             Controls.Add(btnCitas);

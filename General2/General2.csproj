@@ -98,10 +98,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="CLS\CTratamiento.cs" />
+    <Compile Include="CLS\DTratamiento.cs" />
     <Compile Include="CLS\HClinico.cs" />
     <Compile Include="CLS\HConsulta.cs" />
     <Compile Include="CLS\infoCitas.cs" />
-    <Compile Include="CLS\Infoempleado.cs" />
+    <Compile Include="CLS\empleado.cs" />
     <Compile Include="CLS\InfoPacientes.cs" />
     <Compile Include="CLS\infoUsuarios.cs" />
     <Compile Include="CLS\ListaCitas.cs" />

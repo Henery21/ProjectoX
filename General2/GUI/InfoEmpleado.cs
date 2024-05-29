@@ -1,4 +1,5 @@
-﻿using System;
+﻿using General2.CLS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,21 @@ namespace General2.GUI
         public InfoEmpleado()
         {
             InitializeComponent();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            empleado.Insertar();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            empleado.Actualizar();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+           empleado.Eliminar();
         }
     }
 }

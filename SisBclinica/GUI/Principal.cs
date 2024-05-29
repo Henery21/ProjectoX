@@ -37,7 +37,7 @@ namespace SisBclinica.GUI
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)

@@ -20,18 +20,18 @@ Estado
 */
 namespace General2.CLS
 {
-    internal class Infoempleado
+    internal class empleado
     {
-        String _IDEmpleado;
-        String _IDDireccion;
-        String _IDCargo;
-        String _IDPErmiso;
-        String _Nombres;
-        String _Apellidos;
-        String _Telefono;
-        String _Correo;
-        String _Direccion;
-        String _Puesto;
+        private String _IDEmpleado;
+        private String _IDDireccion;
+        private String _IDCargo;
+        private String _IDPErmiso;
+        private String _Nombres;
+        private String _Apellidos;
+        private String _Telefono;
+        private String _Correo;
+        private String _Direccion;
+        private String _Puesto;
         String _Sexo;
         String _Estado;
 
@@ -57,7 +57,8 @@ namespace General2.CLS
             try
             {
                 //FALTA CONSULTA PEDIR AL MORRO QUE HIZO LA DB
-                Sentencia = @" ";
+                Sentencia = @"INSERT INTO Empleados (IDEmpleado, IDDireccion, IDCargo, IDPermiso, Nombres, Apellidos, Telefono, Correo, Direccion, Puesto, Sexo, Estado) 
+                                VALUES (@IDEmpleado, @IDDireccion, @IDCargo, @IDPermiso, @Nombres, @Apellidos, @Telefono, @Correo, @Direccion, @Puesto, @Sexo, @Estado)"; 
                 DataLayer.DBoperacion Operacion = new DataLayer.DBoperacion();
                 FilasInsertadas = Operacion.EjecutarSentencia(Sentencia);
                 if (FilasInsertadas > 0)
@@ -66,9 +67,9 @@ namespace General2.CLS
                 }
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                Console.WriteLine("Error al insertar empleado: " + ex.Message);
                 resultado = false;
             }
             return resultado;
@@ -82,11 +83,16 @@ namespace General2.CLS
 
             try
             {
-                Sentencia = @"";
+                Sentencia = @"UPDATE Empleados 
+                                SET IDDireccion = @IDDireccion, IDCargo = @IDCargo, IDPermiso = @IDPermiso,
+                                    Nombres = @Nombres, Apellidos = @Apellidos, Telefono = @Telefono, 
+                                    Correo = @Correo, Direccion = @Direccion, Puesto = @Puesto, 
+                                    Sexo = @Sexo, Estado = @Estado
+                                WHERE IDEmpleado = @IDEmpleado";
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                Console.WriteLine("Error al actualizar empleado: " + ex.Message);
                 Resultado = false;
             }
             return Resultado;
@@ -100,14 +106,15 @@ namespace General2.CLS
 
             try
             {
-                Sentencia = @"";
+                Sentencia = @"DELETE FROM Empleados WHERE IDEmpleado = @IDEmpleado";
                 if (true)
                 {
                     Resultado = true;
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                Console.WriteLine("Error al eliminar empleado: " + ex.Message);
                 Resultado = false;
             }
 

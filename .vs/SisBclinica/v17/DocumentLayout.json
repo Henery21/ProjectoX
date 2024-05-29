@@ -7,11 +7,11 @@
       "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\cls\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\kike\\desktop\\xprojecto-main\\general2\\gui\\infoempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|C:\\Users\\Kike\\Desktop\\Xprojecto-main\\general2\\gui\\infoempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\gui\\infoempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\kike\\desktop\\xprojecto-main\\general2\\gui\\infoempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|C:\\Users\\Kike\\Desktop\\Xprojecto-main\\general2\\gui\\infoempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\gui\\infoempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -22,21 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "empleado.cs",
-              "DocumentMoniker": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\CLS\\empleado.cs",
-              "RelativeDocumentMoniker": "General2\\CLS\\empleado.cs",
-              "ToolTip": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\CLS\\empleado.cs",
-              "RelativeToolTip": "General2\\CLS\\empleado.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAQwF0AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T17:16:01.963Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
@@ -63,6 +50,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "empleado.cs",
+              "DocumentMoniker": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\CLS\\empleado.cs",
+              "RelativeDocumentMoniker": "General2\\CLS\\empleado.cs",
+              "ToolTip": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\CLS\\empleado.cs",
+              "RelativeToolTip": "General2\\CLS\\empleado.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAQwF0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T17:16:01.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "InfoEmpleado.cs",
               "DocumentMoniker": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\GUI\\InfoEmpleado.cs",
@@ -71,8 +71,7 @@
               "RelativeToolTip": "General2\\GUI\\InfoEmpleado.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAQwAUAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T17:14:08.756Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T17:14:08.756Z"
             },
             {
               "$type": "Document",
@@ -83,8 +82,7 @@
               "ToolTip": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\General2\\GUI\\InfoEmpleado.cs [Dise\u00F1o]",
               "RelativeToolTip": "General2\\GUI\\InfoEmpleado.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T17:14:04.606Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-05-29T17:14:04.606Z"
             }
           ]
         }

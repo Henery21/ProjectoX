@@ -61,12 +61,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="DAT\Empleado.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Empleado.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DAT\Pacientes.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Pacientes.xsd</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REP\ReporteEmpleado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteEmpleado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="REP\ReportePaciente.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -90,6 +101,17 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="DAT\Empleado.xsc">
+      <DependentUpon>Empleado.xsd</DependentUpon>
+    </None>
+    <None Include="DAT\Empleado.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Empleado.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DAT\Empleado.xss">
+      <DependentUpon>Empleado.xsd</DependentUpon>
+    </None>
     <None Include="DAT\Pacientes.xsc">
       <DependentUpon>Pacientes.xsd</DependentUpon>
     </None>
@@ -103,6 +125,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="REP\ReporteEmpleado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteEmpleado.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="REP\ReportePaciente.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReportePaciente.cs</LastGenOutput>

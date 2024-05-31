@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Empleado" targetNamespace="http://tempuri.org/Empleado.xsd" xmlns:mstns="http://tempuri.org/Empleado.xsd" xmlns="http://tempuri.org/Empleado.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Empleado" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="Empleado" msprop:Generator_DataSetName="Empleado">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Empelado" msprop:Generator_RowEvHandlerName="EmpeladoRowChangeEventHandler" msprop:Generator_RowDeletedName="EmpeladoRowDeleted" msprop:Generator_RowDeletingName="EmpeladoRowDeleting" msprop:Generator_RowEvArgName="EmpeladoRowChangeEvent" msprop:Generator_TablePropName="Empelado" msprop:Generator_RowChangedName="EmpeladoRowChanged" msprop:Generator_RowChangingName="EmpeladoRowChanging" msprop:Generator_TableClassName="EmpeladoDataTable" msprop:Generator_RowClassName="EmpeladoRow" msprop:Generator_TableVarName="tableEmpelado" msprop:Generator_UserTableName="Empelado">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IDUsuario" msprop:Generator_ColumnPropNameInRow="IDUsuario" msprop:Generator_ColumnPropNameInTable="IDUsuarioColumn" msprop:Generator_ColumnVarNameInTable="columnIDUsuario" msprop:Generator_UserColumnName="IDUsuario" type="xs:string" minOccurs="0" />
+              <xs:element name="Usuario" msprop:Generator_ColumnPropNameInRow="Usuario" msprop:Generator_ColumnPropNameInTable="UsuarioColumn" msprop:Generator_ColumnVarNameInTable="columnUsuario" msprop:Generator_UserColumnName="Usuario" type="xs:string" minOccurs="0" />
+              <xs:element name="IDEmpleado" msprop:Generator_ColumnPropNameInRow="IDEmpleado" msprop:Generator_ColumnPropNameInTable="IDEmpleadoColumn" msprop:Generator_ColumnVarNameInTable="columnIDEmpleado" msprop:Generator_UserColumnName="IDEmpleado" type="xs:string" minOccurs="0" />
+              <xs:element name="IDRol" msprop:Generator_ColumnPropNameInRow="IDRol" msprop:Generator_ColumnPropNameInTable="IDRolColumn" msprop:Generator_ColumnVarNameInTable="columnIDRol" msprop:Generator_UserColumnName="IDRol" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombres" msprop:Generator_ColumnPropNameInRow="Nombres" msprop:Generator_ColumnPropNameInTable="NombresColumn" msprop:Generator_ColumnVarNameInTable="columnNombres" msprop:Generator_UserColumnName="Nombres" type="xs:string" minOccurs="0" />
+              <xs:element name="Apellidos" msprop:Generator_ColumnPropNameInRow="Apellidos" msprop:Generator_ColumnPropNameInTable="ApellidosColumn" msprop:Generator_ColumnVarNameInTable="columnApellidos" msprop:Generator_UserColumnName="Apellidos" type="xs:string" minOccurs="0" />
+              <xs:element name="Rol" msprop:Generator_ColumnPropNameInRow="Rol" msprop:Generator_ColumnPropNameInTable="RolColumn" msprop:Generator_ColumnVarNameInTable="columnRol" msprop:Generator_UserColumnName="Rol" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

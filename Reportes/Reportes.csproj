@@ -71,7 +71,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Pacientes.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DAT\ReporteDeFechasDeconsultas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteDeFechasDeconsultas.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REP\ReporteDeFechasDeConsultas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteDeFechasDeConsultas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="REP\ReporteEmpleado.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -123,8 +134,23 @@
     <None Include="DAT\Pacientes.xss">
       <DependentUpon>Pacientes.xsd</DependentUpon>
     </None>
+    <None Include="DAT\ReporteDeFechasDeconsultas.xsc">
+      <DependentUpon>ReporteDeFechasDeconsultas.xsd</DependentUpon>
+    </None>
+    <None Include="DAT\ReporteDeFechasDeconsultas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReporteDeFechasDeconsultas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DAT\ReporteDeFechasDeconsultas.xss">
+      <DependentUpon>ReporteDeFechasDeconsultas.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="REP\ReporteDeFechasDeConsultas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteDeFechasDeConsultas.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="REP\ReporteEmpleado.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReporteEmpleado.cs</LastGenOutput>

@@ -77,19 +77,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rober\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\SisBclinica\\SisBclinica.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\SisBclinica\\SisBclinica.csproj",
       "projectName": "SisBclinica",
-      "projectPath": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\SisBclinica\\SisBclinica.csproj",
-      "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\SisBclinica\\obj\\",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\SisBclinica\\SisBclinica.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\SisBclinica\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -103,14 +103,14 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\General2\\General2.csproj": {
-              "projectPath": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\General2\\General2.csproj"
+            "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\General2.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\General2.csproj"
             },
-            "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\Reportes\\Reportes.csproj": {
-              "projectPath": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\Reportes\\Reportes.csproj"
+            "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\Reportes\\Reportes.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\Reportes\\Reportes.csproj"
             },
-            "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\SessionMannager\\SessionMannager.csproj": {
-              "projectPath": "C:\\Users\\rober\\OneDrive\\Escritorio\\desarrollo de sofware ll\\LaboratorioDental2\\proyectoX\\ProjectoX\\SessionMannager\\SessionMannager.csproj"
+            "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\SessionMannager\\SessionMannager.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\SessionMannager\\SessionMannager.csproj"
             }
           }
         }
@@ -119,6 +119,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -143,7 +148,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

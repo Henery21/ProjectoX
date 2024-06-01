@@ -47,8 +47,9 @@ namespace General2.GUI
             nuevoEmpleado.Telefono = tbCelular.Text;
             nuevoEmpleado.Correo = tbCorreo.Text;
             nuevoEmpleado.Direccion = tbDireccion.Text;
-            nuevoEmpleado.Puesto = tbIdentidad.Text;
+            nuevoEmpleado.Puesto = cbPuesto.SelectedItem.ToString();
             nuevoEmpleado.Sexo = cbSexo.SelectedItem.ToString();
+            nuevoEmpleado.Estado =cbEstado.SelectedItem.ToString();
 
             bool resultado = nuevoEmpleado.Insertar();
 
@@ -61,49 +62,76 @@ namespace General2.GUI
             {
                 MessageBox.Show("Error al insertar el empleado");
             }
+
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            nuevoEmpleado.Nombres = tbNombres.Text;
-            nuevoEmpleado.Apellidos = tbApellidos.Text;
-            nuevoEmpleado.Telefono = tbCelular.Text;
-            nuevoEmpleado.Correo = tbCorreo.Text;
-            nuevoEmpleado.Direccion = tbDireccion.Text;
-            nuevoEmpleado.Puesto = tbIdentidad.Text;
-            nuevoEmpleado.Sexo = cbSexo.SelectedItem.ToString();
-
-            bool resultado = nuevoEmpleado.Actualizar();
-
-            if (resultado)
+            if (DGInfoEmpleado.SelectedRows.Count > 0)
             {
-                MessageBox.Show("Empleado modificado correctamente");
-                DGInfoEmpleado.DataSource = ObtenerEmpleados(); // Actualizar DataGridView
+                string idEmpleado = DGInfoEmpleado.SelectedRows[0].Cells["IDEmpleado"].Value.ToString();
+
+                if (!string.IsNullOrWhiteSpace(tbNombres.Text) && !string.IsNullOrWhiteSpace(tbApellidos.Text))
+                {
+                    // Actualizar los datos del empleado
+                    nuevoEmpleado.IDEmpleado = idEmpleado;
+                    nuevoEmpleado.Nombres = tbNombres.Text;
+                    nuevoEmpleado.Apellidos = tbApellidos.Text;
+                    nuevoEmpleado.Telefono = tbCelular.Text;
+                    nuevoEmpleado.Correo = tbCorreo.Text;
+                    nuevoEmpleado.Direccion = tbDireccion.Text;
+                    nuevoEmpleado.Puesto = cbPuesto.SelectedItem.ToString();
+                    nuevoEmpleado.Sexo = cbSexo.SelectedItem.ToString();
+
+                    bool resultado = nuevoEmpleado.Actualizar();
+
+                    if (resultado)
+                    {
+                        MessageBox.Show("Empleado modificado correctamente");
+                        DGInfoEmpleado.DataSource = ObtenerEmpleados(); // Actualizar DataGridView
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error al modificar el empleado");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Por favor, complete los campos obligatorios.");
+                }
             }
             else
             {
-                MessageBox.Show("Error al modificar el empleado");
+                MessageBox.Show("Por favor, seleccione un empleado para modificar.");
             }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            nuevoEmpleado.IDEmpleado = tbIdentidad.Text;
-
-            bool resultado = nuevoEmpleado.Eliminar();
-
-            if (resultado)
+            if (DGInfoEmpleado.SelectedRows.Count > 0)
             {
-                MessageBox.Show("Empleado eliminado correctamente");
-                DGInfoEmpleado.DataSource = ObtenerEmpleados(); // Actualizar DataGridView
+                string idEmpleado = DGInfoEmpleado.SelectedRows[0].Cells["IDEmpleado"].Value.ToString();
+
+                nuevoEmpleado.IDEmpleado = idEmpleado;
+
+                bool resultado = nuevoEmpleado.Eliminar();
+
+                if (resultado)
+                {
+                    MessageBox.Show("Empleado eliminado correctamente");
+                    DGInfoEmpleado.DataSource = ObtenerEmpleados();
+                }
+                else
+                {
+                    MessageBox.Show("Error al eliminar el empleado");
+                }
             }
             else
             {
-                MessageBox.Show("Error al eliminar el empleado");
+                MessageBox.Show("Por favor, seleccione un empleado para eliminar.");
             }
         }
-
-        private void DGInfoEmpleado_CellContentClick(object sender, DataGridViewCellEventArgs e)
+            private void DGInfoEmpleado_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

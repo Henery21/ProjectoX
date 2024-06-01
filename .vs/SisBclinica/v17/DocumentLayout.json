@@ -1,20 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\usuario\\desktop\\desarrollo software ll\\projectox\\general2\\cls\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\cls\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\general2\\gui\\infoempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\gui\\infoempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\general2\\gui\\infoempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\gui\\infoempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,11 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Bookmark",
@@ -37,52 +24,16 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "empleado.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\CLS\\empleado.cs",
-              "RelativeDocumentMoniker": "General2\\CLS\\empleado.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\CLS\\empleado.cs",
-              "RelativeToolTip": "General2\\CLS\\empleado.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T17:16:01.963Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InfoEmpleado.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\GUI\\InfoEmpleado.cs",
-              "RelativeDocumentMoniker": "General2\\GUI\\InfoEmpleado.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\GUI\\InfoEmpleado.cs",
-              "RelativeToolTip": "General2\\GUI\\InfoEmpleado.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T17:14:08.756Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "InfoEmpleado.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\GUI\\InfoEmpleado.cs",
-              "RelativeDocumentMoniker": "General2\\GUI\\InfoEmpleado.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\GUI\\InfoEmpleado.cs [Dise\u00F1o]",
-              "RelativeToolTip": "General2\\GUI\\InfoEmpleado.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T17:14:04.606Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": -1,
-          "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

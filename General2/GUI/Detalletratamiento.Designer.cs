@@ -35,25 +35,21 @@ namespace General2.GUI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Detalletratamiento));
             this.DGdetalleTratamiento = new System.Windows.Forms.DataGridView();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.cbEstado = new System.Windows.Forms.ComboBox();
             this.lblEstado = new System.Windows.Forms.Label();
-            this.tbIndicaciones = new System.Windows.Forms.TextBox();
+            this.txtIndicacion = new System.Windows.Forms.TextBox();
             this.lblindicaciones = new System.Windows.Forms.Label();
-            this.tbUsuario = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.lblTItuloDtratamiento = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.bntCerrar = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tbIdUsuario = new System.Windows.Forms.TextBox();
             this.lblDuracionTratamiento = new System.Windows.Forms.Label();
-            this.tbNtratameinto = new System.Windows.Forms.TextBox();
-            this.lblNTratamiento = new System.Windows.Forms.Label();
-            this.tbBuscar = new System.Windows.Forms.TextBox();
+            this.txtDuracion = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DGdetalleTratamiento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bntCerrar)).BeginInit();
@@ -69,20 +65,6 @@ namespace General2.GUI
             this.DGdetalleTratamiento.Size = new System.Drawing.Size(626, 277);
             this.DGdetalleTratamiento.TabIndex = 137;
             // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
-            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Location = new System.Drawing.Point(254, 257);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(71, 23);
-            this.btnBuscar.TabIndex = 136;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            // 
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
@@ -96,6 +78,7 @@ namespace General2.GUI
             this.btnEliminar.TabIndex = 135;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
@@ -110,6 +93,7 @@ namespace General2.GUI
             this.btnModificar.TabIndex = 134;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnAgregar
             // 
@@ -124,6 +108,7 @@ namespace General2.GUI
             this.btnAgregar.TabIndex = 133;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // cbEstado
             // 
@@ -143,13 +128,13 @@ namespace General2.GUI
             this.lblEstado.TabIndex = 131;
             this.lblEstado.Text = "Estado";
             // 
-            // tbIndicaciones
+            // txtIndicacion
             // 
-            this.tbIndicaciones.Location = new System.Drawing.Point(10, 197);
-            this.tbIndicaciones.Multiline = true;
-            this.tbIndicaciones.Name = "tbIndicaciones";
-            this.tbIndicaciones.Size = new System.Drawing.Size(397, 48);
-            this.tbIndicaciones.TabIndex = 127;
+            this.txtIndicacion.Location = new System.Drawing.Point(10, 197);
+            this.txtIndicacion.Multiline = true;
+            this.txtIndicacion.Name = "txtIndicacion";
+            this.txtIndicacion.Size = new System.Drawing.Size(397, 48);
+            this.txtIndicacion.TabIndex = 127;
             // 
             // lblindicaciones
             // 
@@ -161,18 +146,18 @@ namespace General2.GUI
             this.lblindicaciones.TabIndex = 126;
             this.lblindicaciones.Text = "Inidicaciones";
             // 
-            // tbUsuario
+            // txtPrecio
             // 
-            this.tbUsuario.Location = new System.Drawing.Point(411, 140);
-            this.tbUsuario.Name = "tbUsuario";
-            this.tbUsuario.Size = new System.Drawing.Size(105, 20);
-            this.tbUsuario.TabIndex = 125;
+            this.txtPrecio.Location = new System.Drawing.Point(411, 140);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(105, 20);
+            this.txtPrecio.TabIndex = 125;
             // 
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
             this.lblPrecio.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(411, 115);
+            this.lblPrecio.Location = new System.Drawing.Point(438, 115);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(50, 20);
             this.lblPrecio.TabIndex = 124;
@@ -219,67 +204,39 @@ namespace General2.GUI
             this.pictureBox1.TabIndex = 116;
             this.pictureBox1.TabStop = false;
             // 
-            // tbIdUsuario
-            // 
-            this.tbIdUsuario.Location = new System.Drawing.Point(275, 140);
-            this.tbIdUsuario.Name = "tbIdUsuario";
-            this.tbIdUsuario.Size = new System.Drawing.Size(132, 20);
-            this.tbIdUsuario.TabIndex = 139;
-            // 
             // lblDuracionTratamiento
             // 
             this.lblDuracionTratamiento.AutoSize = true;
             this.lblDuracionTratamiento.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDuracionTratamiento.Location = new System.Drawing.Point(275, 115);
+            this.lblDuracionTratamiento.Location = new System.Drawing.Point(18, 115);
             this.lblDuracionTratamiento.Name = "lblDuracionTratamiento";
             this.lblDuracionTratamiento.Size = new System.Drawing.Size(153, 20);
             this.lblDuracionTratamiento.TabIndex = 138;
             this.lblDuracionTratamiento.Text = "Duracion Tratamiento";
             // 
-            // tbNtratameinto
+            // txtDuracion
             // 
-            this.tbNtratameinto.Location = new System.Drawing.Point(10, 140);
-            this.tbNtratameinto.Name = "tbNtratameinto";
-            this.tbNtratameinto.Size = new System.Drawing.Size(260, 20);
-            this.tbNtratameinto.TabIndex = 141;
-            // 
-            // lblNTratamiento
-            // 
-            this.lblNTratamiento.AutoSize = true;
-            this.lblNTratamiento.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNTratamiento.Location = new System.Drawing.Point(10, 115);
-            this.lblNTratamiento.Name = "lblNTratamiento";
-            this.lblNTratamiento.Size = new System.Drawing.Size(141, 20);
-            this.lblNTratamiento.TabIndex = 140;
-            this.lblNTratamiento.Text = "Nombre tratamieno";
-            // 
-            // tbBuscar
-            // 
-            this.tbBuscar.Location = new System.Drawing.Point(14, 259);
-            this.tbBuscar.Name = "tbBuscar";
-            this.tbBuscar.Size = new System.Drawing.Size(234, 20);
-            this.tbBuscar.TabIndex = 142;
+            this.txtDuracion.Location = new System.Drawing.Point(10, 140);
+            this.txtDuracion.Name = "txtDuracion";
+            this.txtDuracion.Size = new System.Drawing.Size(260, 20);
+            this.txtDuracion.TabIndex = 141;
             // 
             // Detalletratamiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(630, 563);
-            this.Controls.Add(this.tbBuscar);
-            this.Controls.Add(this.tbNtratameinto);
-            this.Controls.Add(this.lblNTratamiento);
-            this.Controls.Add(this.tbIdUsuario);
+            this.Controls.Add(this.txtDuracion);
             this.Controls.Add(this.lblDuracionTratamiento);
             this.Controls.Add(this.DGdetalleTratamiento);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.cbEstado);
             this.Controls.Add(this.lblEstado);
-            this.Controls.Add(this.tbIndicaciones);
+            this.Controls.Add(this.txtIndicacion);
             this.Controls.Add(this.lblindicaciones);
-            this.Controls.Add(this.tbUsuario);
+            this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.lblTItuloDtratamiento);
             this.Controls.Add(this.pictureBox4);
@@ -300,7 +257,6 @@ namespace General2.GUI
         #endregion
 
         private DataGridView DGdetalleTratamiento;
-        private Button btnBuscar;
         private Button btnEliminar;
         private Button btnModificar;
         private Button btnAgregar;
@@ -308,9 +264,9 @@ namespace General2.GUI
         private Label lblEstado;
         private ComboBox cbTpUsuario;
         private Label lblTUsuerio;
-        private TextBox tbIndicaciones;
+        private TextBox txtIndicacion;
         private Label lblindicaciones;
-        private TextBox tbUsuario;
+        private TextBox txtPrecio;
         private Label lblPrecio;
         private TextBox tbNombreCompleto;
         private Label lblNOmbreCompleto;
@@ -319,10 +275,7 @@ namespace General2.GUI
         private PictureBox pictureBox4;
         private PictureBox bntCerrar;
         private PictureBox pictureBox1;
-        private TextBox tbIdUsuario;
         private Label lblDuracionTratamiento;
-        private TextBox tbNtratameinto;
-        private Label lblNTratamiento;
-        private TextBox tbBuscar;
+        private TextBox txtDuracion;
     }
 }

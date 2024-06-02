@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\kike\\desktop\\xprojecto-main\\projectox\\general2\\gui\\infousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\gui\\infousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\kike\\desktop\\xprojecto-main\\projectox\\general2\\gui\\detalletratamiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\gui\\detalletratamiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\general2\\gui\\infousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\gui\\infousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\kike\\desktop\\xprojecto-main\\projectox\\general2\\gui\\detalletratamiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\gui\\detalletratamiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\kike\\desktop\\xprojecto-main\\projectox\\general2\\cls\\infousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\cls\\infousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\kike\\desktop\\xprojecto-main\\projectox\\general2\\cls\\dtratamiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\cls\\dtratamiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,39 +51,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "infoUsuarios.cs",
-              "DocumentMoniker": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\CLS\\infoUsuarios.cs",
-              "RelativeDocumentMoniker": "General2\\CLS\\infoUsuarios.cs",
-              "ToolTip": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\CLS\\infoUsuarios.cs",
-              "RelativeToolTip": "General2\\CLS\\infoUsuarios.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAIwKAAAAAAAAAA",
+              "Title": "DTratamiento.cs",
+              "DocumentMoniker": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\CLS\\DTratamiento.cs",
+              "RelativeDocumentMoniker": "General2\\CLS\\DTratamiento.cs",
+              "ToolTip": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\CLS\\DTratamiento.cs",
+              "RelativeToolTip": "General2\\CLS\\DTratamiento.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAuwBkAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T19:26:24.599Z",
+              "WhenOpened": "2024-06-02T20:35:38.869Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "InfoUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\GUI\\InfoUsuario.cs",
-              "RelativeDocumentMoniker": "General2\\GUI\\InfoUsuario.cs",
-              "ToolTip": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\GUI\\InfoUsuario.cs",
-              "RelativeToolTip": "General2\\GUI\\InfoUsuario.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAUwBQAAAAAAAAA",
+              "Title": "Detalletratamiento.cs",
+              "DocumentMoniker": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\GUI\\Detalletratamiento.cs",
+              "RelativeDocumentMoniker": "General2\\GUI\\Detalletratamiento.cs",
+              "ToolTip": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\GUI\\Detalletratamiento.cs",
+              "RelativeToolTip": "General2\\GUI\\Detalletratamiento.cs",
+              "ViewState": "AQIAAHMAAAAAAAAAAAAwwJ4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T16:03:33.576Z",
+              "WhenOpened": "2024-06-02T20:23:49.751Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InfoUsuario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\GUI\\InfoUsuario.cs",
-              "RelativeDocumentMoniker": "General2\\GUI\\InfoUsuario.cs",
-              "ToolTip": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\GUI\\InfoUsuario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "General2\\GUI\\InfoUsuario.cs [Dise\u00F1o]",
+              "Title": "Detalletratamiento.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\GUI\\Detalletratamiento.cs",
+              "RelativeDocumentMoniker": "General2\\GUI\\Detalletratamiento.cs",
+              "ToolTip": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\GUI\\Detalletratamiento.cs [Dise\u00F1o]",
+              "RelativeToolTip": "General2\\GUI\\Detalletratamiento.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T15:53:46.195Z",
+              "WhenOpened": "2024-06-02T19:59:52.046Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

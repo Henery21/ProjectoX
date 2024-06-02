@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,80 +17,113 @@ namespace General2.CLS
     {
         String _IDTratamiento;
         String _DuracionT;
-        String _Precio;
+        decimal _Precio;
         String _Indicacion;
         String _Estado;
 
         public string IDTratamiento { get => _IDTratamiento; set => _IDTratamiento = value; }
         public string DuracionT { get => _DuracionT; set => _DuracionT = value; }
-        public string Precio { get => _Precio; set => _Precio = value; }
+        public decimal Precio { get => _Precio; set => _Precio = value; }
         public string Indicacion { get => _Indicacion; set => _Indicacion = value; }
         public string Estado { get => _Estado; set => _Estado = value; }
 
         public Boolean Insertar()
         {
-            Boolean Resultado = false;
-            String Sentencia;
-            Int32 FilasInsertadas = 0;
+            bool resultado = false;
 
             try
             {
-                //FALTA CONSULTA PEDIR AL MORRO QUE HIZO LA DB
-                Sentencia = @"";
-                DataLayer.DBoperacion Operacion = new DataLayer.DBoperacion();
-                FilasInsertadas = Operacion.EjecutarSentencia(Sentencia);
-                if (FilasInsertadas > 0)
+                string connectionString = "Server=localhost;Port=3306;Database=nombre_basedatos;Uid=root;Pwd=contraseña;AllowUserVariables=True;";
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
-                    Resultado = true;
+                    connection.Open();
+                    string query = @"INSERT INTO tabla_tratamientos (DuracionT, Precio, Indicacion, Estado) 
+                                    VALUES (@DuracionT, @Precio, @Indicacion, @Estado)";
+                    MySqlCommand command = new MySqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@DuracionT", DuracionT);
+                    command.Parameters.AddWithValue("@Precio", Precio);
+                    command.Parameters.AddWithValue("@Indicacion", Indicacion);
+                    command.Parameters.AddWithValue("@Estado", Estado);
+
+                    int filasInsertadas = command.ExecuteNonQuery();
+                    if (filasInsertadas > 0)
+                    {
+                        resultado = true;
+                    }
                 }
-                //CONTIANCION 
-
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                Resultado = false;
+                Console.WriteLine("Error al insertar tratamiento: " + ex.Message);
+                resultado = false;
             }
-            return Resultado;
+
+            return resultado;
         }
         public Boolean Actualizar()
         {
-            Boolean Resultado = false;
-            String Sentencia;
-            Int32 FilasActualizadas = 0;
+            Boolean resultado = false;
 
             try
             {
-                Sentencia = @""; ;
-            }
-            catch (Exception)
-            {
+                string connectionString = "Server=localhost;Port=3306;Database=nombre_basedatos;Uid=root;Pwd=contraseña;AllowUserVariables=True;";
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string query = @"UPDATE tabla_tratamientos 
+                                    SET DuracionT = @DuracionT, Precio = @Precio, Indicacion = @Indicacion, Estado = @Estado 
+                                    WHERE IDTratamiento = @IDTratamiento";
+                    MySqlCommand command = new MySqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@DuracionT", DuracionT);
+                    command.Parameters.AddWithValue("@Precio", Precio);
+                    command.Parameters.AddWithValue("@Indicacion", Indicacion);
+                    command.Parameters.AddWithValue("@Estado", Estado);
+                    command.Parameters.AddWithValue("@IDTratamiento", IDTratamiento);
 
-                Resultado = false;
+                    int filasActualizadas = command.ExecuteNonQuery();
+                    if (filasActualizadas > 0)
+                    {
+                        resultado = true;
+                    }
+                }
             }
-            return Resultado;
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al actualizar tratamiento: " + ex.Message);
+                resultado = false;
+            }
+
+            return resultado;
         }
 
         public Boolean Eliminar()
         {
-            Boolean Resultado = false;
-            String Sentencia;
-            Int32 FilasEliminadas = 0;
+            Boolean resultado = false;
 
             try
             {
-                Sentencia = @"";
-                if (true)
+                string connectionString = "Server=localhost;Port=3306;Database=nombre_basedatos;Uid=root;Pwd=contraseña;AllowUserVariables=True;";
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
-                    Resultado = true;
+                    connection.Open();
+                    string query = @"DELETE FROM tabla_tratamientos WHERE IDTratamiento = @IDTratamiento";
+                    MySqlCommand command = new MySqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@IDTratamiento", IDTratamiento);
+
+                    int filasEliminadas = command.ExecuteNonQuery();
+                    if (filasEliminadas > 0)
+                    {
+                        resultado = true;
+                    }
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                Resultado = false;
+                Console.WriteLine("Error al eliminar tratamiento: " + ex.Message);
+                resultado = false;
             }
 
-            return Resultado;
+            return resultado;
         }
     }
 }

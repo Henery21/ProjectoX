@@ -47,7 +47,7 @@ namespace General2.GUI
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTratamiento = new System.Windows.Forms.Label();
             this.cbTratamiento = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbEstado = new System.Windows.Forms.ComboBox();
             this.lblEstado = new System.Windows.Forms.Label();
             this.tbBuscar = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DGConsultaTratamiento)).BeginInit();
@@ -64,6 +64,7 @@ namespace General2.GUI
             this.DGConsultaTratamiento.Name = "DGConsultaTratamiento";
             this.DGConsultaTratamiento.Size = new System.Drawing.Size(626, 302);
             this.DGConsultaTratamiento.TabIndex = 156;
+            this.DGConsultaTratamiento.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGConsultaTratamiento_CellContentClick);
             // 
             // btnBuscar
             // 
@@ -92,6 +93,7 @@ namespace General2.GUI
             this.btnEliminar.TabIndex = 154;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
@@ -106,6 +108,7 @@ namespace General2.GUI
             this.btnModificar.TabIndex = 153;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnAgregar
             // 
@@ -120,6 +123,7 @@ namespace General2.GUI
             this.btnAgregar.TabIndex = 152;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // tbConsulta
             // 
@@ -197,13 +201,13 @@ namespace General2.GUI
             this.cbTratamiento.Size = new System.Drawing.Size(112, 21);
             this.cbTratamiento.TabIndex = 151;
             // 
-            // comboBox1
+            // cbEstado
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(263, 140);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(112, 21);
-            this.comboBox1.TabIndex = 158;
+            this.cbEstado.FormattingEnabled = true;
+            this.cbEstado.Location = new System.Drawing.Point(263, 140);
+            this.cbEstado.Name = "cbEstado";
+            this.cbEstado.Size = new System.Drawing.Size(112, 21);
+            this.cbEstado.TabIndex = 158;
             // 
             // lblEstado
             // 
@@ -229,7 +233,7 @@ namespace General2.GUI
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(630, 563);
             this.Controls.Add(this.tbBuscar);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbEstado);
             this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.DGConsultaTratamiento);
             this.Controls.Add(this.btnBuscar);
@@ -247,6 +251,7 @@ namespace General2.GUI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ConsultaTratamiento";
             this.Text = "ConsultaTratamiento";
+            this.Load += new System.EventHandler(this.ConsultaTratamiento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGConsultaTratamiento)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
@@ -270,7 +275,7 @@ namespace General2.GUI
         private PictureBox pictureBox1;
         private Label lblTratamiento;
         private ComboBox cbTratamiento;
-        private ComboBox comboBox1;
+        private ComboBox cbEstado;
         private Label lblEstado;
         private TextBox tbBuscar;
     }

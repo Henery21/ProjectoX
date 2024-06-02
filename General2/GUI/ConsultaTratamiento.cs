@@ -22,7 +22,7 @@ namespace General2.GUI
             string connectionString = "Server=localhost;Port=3306;Database=laboratoriodental;Uid=root;Pwd=root;AllowUserVariables=True;";
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
-                string query = "SELECT IDTratamiento, Tratamiento, Estado FROM tratamientos";
+                string query = "SELECT IDTratamiento, Tratamiento, Estado FROM laboratoriodental.tratamientos";
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
                     connection.Open();

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\kike\\desktop\\xprojecto-main\\projectox\\general2\\gui\\infousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\gui\\infousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\kike\\desktop\\xprojecto-main\\projectox\\general2\\gui\\infoempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\gui\\infoempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\general2\\gui\\infoempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\gui\\infoempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\general2\\cls\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\cls\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\kike\\desktop\\xprojecto-main\\projectox\\general2\\gui\\infousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\gui\\infousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 237,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,39 +50,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "InfoEmpleado.cs",
               "DocumentMoniker": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\GUI\\InfoEmpleado.cs",
               "RelativeDocumentMoniker": "General2\\GUI\\InfoEmpleado.cs",
               "ToolTip": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\GUI\\InfoEmpleado.cs",
               "RelativeToolTip": "General2\\GUI\\InfoEmpleado.cs",
-              "ViewState": "AQIAAG4AAAAAAAAAAAAQwG8AAAANAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T08:37:30.439Z",
+              "WhenOpened": "2024-06-02T17:02:16.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InfoUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\GUI\\InfoUsuario.cs",
+              "RelativeDocumentMoniker": "General2\\GUI\\InfoUsuario.cs",
+              "ToolTip": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\GUI\\InfoUsuario.cs",
+              "RelativeToolTip": "General2\\GUI\\InfoUsuario.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwC0AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T16:03:33.576Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "empleado.cs",
-              "DocumentMoniker": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\CLS\\empleado.cs",
-              "RelativeDocumentMoniker": "General2\\CLS\\empleado.cs",
-              "ToolTip": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\CLS\\empleado.cs",
-              "RelativeToolTip": "General2\\CLS\\empleado.cs",
-              "ViewState": "AQIAAIwAAAAAAAAAAAAqwAAAAAAAAAAA",
+              "Title": "InfoUsuario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\GUI\\InfoUsuario.cs",
+              "RelativeDocumentMoniker": "General2\\GUI\\InfoUsuario.cs",
+              "ToolTip": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\GUI\\InfoUsuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "General2\\GUI\\InfoUsuario.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T09:27:11.122Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InfoEmpleado.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\GUI\\InfoEmpleado.cs",
-              "RelativeDocumentMoniker": "General2\\GUI\\InfoEmpleado.cs",
-              "ToolTip": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\GUI\\InfoEmpleado.cs [Dise\u00F1o]",
-              "RelativeToolTip": "General2\\GUI\\InfoEmpleado.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T15:26:53.072Z"
+              "WhenOpened": "2024-06-02T15:53:46.195Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

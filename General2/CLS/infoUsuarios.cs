@@ -1,8 +1,12 @@
-﻿using System;
+﻿using DataLayer;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Mysqlx.Crud.Order.Types;
 
 /*
 IDUsuario int AI PK 
@@ -39,68 +43,118 @@ namespace General2.CLS
 
         public Boolean Insertar()
         {
-            Boolean resultado = false;
-            String Sentencia;
-            Int32 FilasInsertadas = 0;
+            bool resultado = false;
 
             try
             {
-                //FALTA CONSULTA PEDIR AL MORRO QUE HIZO LA DB
-                Sentencia = @" ";
-                DataLayer.DBoperacion Operacion = new DataLayer.DBoperacion();
-                FilasInsertadas = Operacion.EjecutarSentencia(Sentencia);
-                if (FilasInsertadas > 0)
+                string connectionString = "Server=localhost;Port=3306;Database=laboratoriodental;Uid=root;Pwd=root;AllowUserVariables=True;";
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
-                    resultado = true;
+                    connection.Open();
+                    string consulta = "INSERT INTO tabla_usuarios (IDRol, IDEmpleado, NomCompleto, Usuario, Clave, TipoUsuario, Estado) " +
+                                       "VALUES (@IDRol, @IDEmpleado, @NomCompleto, @Usuario, @Clave, @TipoUsuario, @Estado)";
+
+                    // Crear y configurar el comando SQL
+                    using (MySqlCommand comando = new MySqlCommand(consulta, connection))
+                    {
+                        // Agregar los parámetros necesarios
+                        comando.Parameters.AddWithValue("@IDRol", _IDRol);
+                        comando.Parameters.AddWithValue("@IDEmpleado", _IDEmpleado);
+                        comando.Parameters.AddWithValue("@NomCompleto", _NomCompleto);
+                        comando.Parameters.AddWithValue("@Usuario", _Usuario);
+                        comando.Parameters.AddWithValue("@Clave", _Clave);
+                        comando.Parameters.AddWithValue("@TipoUsuario", _TipoUsuario);
+                        comando.Parameters.AddWithValue("@Estado", _Estado);
+
+                        int filasInsertadas = comando.ExecuteNonQuery();
+                        if (filasInsertadas > 0)
+                        {
+                            resultado = true;
+                        }
+                    }
                 }
-
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                Console.WriteLine("Error al insertar usuario: " + ex.Message);
                 resultado = false;
             }
+
             return resultado;
+
         }
+
 
         public Boolean Actualizar()
         {
-            Boolean Resultado = false;
-            String Sentencia;
-            Int32 FilasActualizadas = 0;
+            bool resultado = false;
 
             try
             {
-                Sentencia = @"";
-            }
-            catch (Exception)
-            {
+                string connectionString = "Server=localhost;Port=3306;Database=laboratoriodental;Uid=root;Pwd=root;AllowUserVariables=True;";
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                {
+                    //FAlta la consult
+                    connection.Open();
+                    string consulta = "INSERT INTO tabla_usuarios (IDRol, IDEmpleado, NomCompleto, Usuario, Clave, TipoUsuario, Estado) " +
+                                       "VALUES (@IDRol, @IDEmpleado, @NomCompleto, @Usuario, @Clave, @TipoUsuario, @Estado)";
 
-                Resultado = false;
+                    using (MySqlCommand comando = new MySqlCommand(consulta, connection))
+                    {
+                        comando.Parameters.AddWithValue("@IDRol", _IDRol);
+                        comando.Parameters.AddWithValue("@IDEmpleado", _IDEmpleado);
+                        comando.Parameters.AddWithValue("@NomCompleto", _NomCompleto);
+                        comando.Parameters.AddWithValue("@Usuario", _Usuario);
+                        comando.Parameters.AddWithValue("@Clave", _Clave);
+                        comando.Parameters.AddWithValue("@TipoUsuario", _TipoUsuario);
+                        comando.Parameters.AddWithValue("@Estado", _Estado);
+
+                        int filasInsertadas = comando.ExecuteNonQuery();
+                        if (filasInsertadas > 0)
+                        {
+                            resultado = true;
+                        }
+                    }
+                }
             }
-            return Resultado;
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al Actualizar el  usuario: " + ex.Message);
+                resultado = false;
+            }
+
+            return resultado;
         }
+        
 
         public Boolean Eliminar()
         {
-            Boolean Resultado = false;
-            String Sentencia;
-            Int32 FilasEliminadas = 0;
+            bool resultado = false;
 
             try
             {
-                Sentencia = @"";
-                if (true)
+                string connectionString = "Server=localhost;Port=3306;Database=laboratoriodental;Uid=root;Pwd=root;AllowUserVariables=True;";
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
-                    Resultado = true;
+                    connection.Open();
+                    string query = @"DELETE FROM Empleados WHERE IDEmpleado = @IDEmpleado";
+                    MySqlCommand command = new MySqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@IDEmpleado", IDEmpleado);
+
+                    int filasEliminadas = command.ExecuteNonQuery();
+                    if (filasEliminadas > 0)
+                    {
+                        resultado = true;
+                    }
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                Resultado = false;
+                Console.WriteLine("Error al eliminar empleado: " + ex.Message);
+                resultado = false;
             }
 
-            return Resultado;
+            return resultado;
         }
     }
 }

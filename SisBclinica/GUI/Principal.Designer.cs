@@ -277,7 +277,7 @@
             // 
             btnClose.BackColor = Color.FromArgb(106, 212, 221);
             btnClose.Image = (Image)resources.GetObject("btnClose.Image");
-            btnClose.Location = new Point(760, 0);
+            btnClose.Location = new Point(897, 0);
             btnClose.Name = "btnClose";
             btnClose.Size = new Size(35, 35);
             btnClose.SizeMode = PictureBoxSizeMode.Zoom;

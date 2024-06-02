@@ -38,8 +38,6 @@ namespace General2.GUI
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lblTItuloEmpleado = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbIdentidad = new System.Windows.Forms.TextBox();
             this.tbNombres = new System.Windows.Forms.TextBox();
             this.lblNOmbres = new System.Windows.Forms.Label();
             this.tbApellidos = new System.Windows.Forms.TextBox();
@@ -106,23 +104,6 @@ namespace General2.GUI
             this.lblTItuloEmpleado.Size = new System.Drawing.Size(295, 32);
             this.lblTItuloEmpleado.TabIndex = 9;
             this.lblTItuloEmpleado.Text = "Información del Empleado";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 115);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 20);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Identidad";
-            // 
-            // tbIdentidad
-            // 
-            this.tbIdentidad.Location = new System.Drawing.Point(10, 140);
-            this.tbIdentidad.Name = "tbIdentidad";
-            this.tbIdentidad.Size = new System.Drawing.Size(115, 20);
-            this.tbIdentidad.TabIndex = 11;
             // 
             // tbNombres
             // 
@@ -352,8 +333,6 @@ namespace General2.GUI
             this.Controls.Add(this.lblApellidos);
             this.Controls.Add(this.tbNombres);
             this.Controls.Add(this.lblNOmbres);
-            this.Controls.Add(this.tbIdentidad);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTItuloEmpleado);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btnClose);
@@ -376,8 +355,6 @@ namespace General2.GUI
         private PictureBox pictureBox1;
         private PictureBox pictureBox4;
         private Label lblTItuloEmpleado;
-        private Label label1;
-        private TextBox tbIdentidad;
         private TextBox tbNombres;
         private Label lblNOmbres;
         private TextBox tbApellidos;

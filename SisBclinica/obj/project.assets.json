@@ -77,19 +77,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\Kike\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\SisBclinica\\SisBclinica.csproj",
+      "projectUniqueName": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\SisBclinica\\SisBclinica.csproj",
       "projectName": "SisBclinica",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\SisBclinica\\SisBclinica.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\SisBclinica\\obj\\",
+      "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\SisBclinica\\SisBclinica.csproj",
+      "packagesPath": "C:\\Users\\Kike\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\SisBclinica\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kike\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -103,14 +103,14 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\General2.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\General2.csproj"
+            "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\General2.csproj": {
+              "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\General2.csproj"
             },
-            "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\Reportes\\Reportes.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\Reportes\\Reportes.csproj"
+            "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\Reportes\\Reportes.csproj": {
+              "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\Reportes\\Reportes.csproj"
             },
-            "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\SessionMannager\\SessionMannager.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\SessionMannager\\SessionMannager.csproj"
+            "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\SessionMannager\\SessionMannager.csproj": {
+              "projectPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\SessionMannager\\SessionMannager.csproj"
             }
           }
         }
@@ -148,7 +148,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

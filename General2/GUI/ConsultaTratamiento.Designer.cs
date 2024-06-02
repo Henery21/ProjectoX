@@ -35,7 +35,6 @@ namespace General2.GUI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultaTratamiento));
             this.DGConsultaTratamiento = new System.Windows.Forms.DataGridView();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -49,7 +48,6 @@ namespace General2.GUI
             this.cbTratamiento = new System.Windows.Forms.ComboBox();
             this.cbEstado = new System.Windows.Forms.ComboBox();
             this.lblEstado = new System.Windows.Forms.Label();
-            this.tbBuscar = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DGConsultaTratamiento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
@@ -65,20 +63,6 @@ namespace General2.GUI
             this.DGConsultaTratamiento.Size = new System.Drawing.Size(626, 302);
             this.DGConsultaTratamiento.TabIndex = 156;
             this.DGConsultaTratamiento.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGConsultaTratamiento_CellContentClick);
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
-            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Location = new System.Drawing.Point(263, 220);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(71, 23);
-            this.btnBuscar.TabIndex = 155;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // btnEliminar
             // 
@@ -196,6 +180,10 @@ namespace General2.GUI
             // cbTratamiento
             // 
             this.cbTratamiento.FormattingEnabled = true;
+            this.cbTratamiento.Items.AddRange(new object[] {
+            "Consulta",
+            "Seguimiento",
+            "Urgencia "});
             this.cbTratamiento.Location = new System.Drawing.Point(10, 140);
             this.cbTratamiento.Name = "cbTratamiento";
             this.cbTratamiento.Size = new System.Drawing.Size(112, 21);
@@ -204,6 +192,9 @@ namespace General2.GUI
             // cbEstado
             // 
             this.cbEstado.FormattingEnabled = true;
+            this.cbEstado.Items.AddRange(new object[] {
+            "Activo",
+            "Inactivo"});
             this.cbEstado.Location = new System.Drawing.Point(263, 140);
             this.cbEstado.Name = "cbEstado";
             this.cbEstado.Size = new System.Drawing.Size(112, 21);
@@ -219,24 +210,15 @@ namespace General2.GUI
             this.lblEstado.TabIndex = 157;
             this.lblEstado.Text = "Estado";
             // 
-            // tbBuscar
-            // 
-            this.tbBuscar.Location = new System.Drawing.Point(14, 222);
-            this.tbBuscar.Name = "tbBuscar";
-            this.tbBuscar.Size = new System.Drawing.Size(233, 20);
-            this.tbBuscar.TabIndex = 159;
-            // 
             // ConsultaTratamiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(630, 563);
-            this.Controls.Add(this.tbBuscar);
             this.Controls.Add(this.cbEstado);
             this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.DGConsultaTratamiento);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnAgregar);
@@ -263,7 +245,6 @@ namespace General2.GUI
 
         #endregion
         private DataGridView DGConsultaTratamiento;
-        private Button btnBuscar;
         private Button btnEliminar;
         private Button btnModificar;
         private Button btnAgregar;
@@ -277,6 +258,5 @@ namespace General2.GUI
         private ComboBox cbTratamiento;
         private ComboBox cbEstado;
         private Label lblEstado;
-        private TextBox tbBuscar;
     }
 }

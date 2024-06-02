@@ -1,10 +1,14 @@
-﻿using System;
+﻿using General2.GUI;
+using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 /*
+ tabla tratamientos
 IDTratamiento int AI PK 
 Tratamiento enum('Consulta','Seguimiento','Urgencia') 
 Estado
@@ -23,68 +27,105 @@ namespace General2.CLS
 
         public Boolean Insertar()
         {
-            Boolean Resultado = false;
-            String Sentencia;
-            Int32 FilasInsertadas = 0;
+            Boolean resultado = false;
 
             try
             {
-                //FALTA CONSULTA PEDIR AL MORRO QUE HIZO LA DB
-                Sentencia = @"";
-                DataLayer.DBoperacion Operacion = new DataLayer.DBoperacion();
-                FilasInsertadas = Operacion.EjecutarSentencia(Sentencia);
-                if (FilasInsertadas > 0)
+
+                using (SqlConnection conexion = new SqlConnection("Server=localhost;Port=3306;Database=laboratoriodental;Uid=root;Pwd=root;AllowUserVariables=True;"))
                 {
-                    Resultado = true;
+                    string consulta = "INSERT INTO tratamientos (Tratamiento, Estado) VALUES (@Tratamiento, @Estado)";
+
+                    using (SqlCommand comando = new SqlCommand(consulta, conexion))
+                    {
+                        comando.Parameters.AddWithValue("@Tratamiento", _Tratamiento);
+                        comando.Parameters.AddWithValue("@Estado", _Estado);
+
+                        conexion.Open();
+
+                       int filasAfectadas = comando.ExecuteNonQuery();
+
+                        if (filasAfectadas > 0)
+                        {
+                            resultado = true;
+                        }
+                    }
                 }
-                //CONTIANCION 
-
+ 
+                
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                Resultado = false;
+                MessageBox.Show("Error al insertar el tratamiento: " + ex.Message);
             }
-            return Resultado;
+
+            return resultado;
         }
         public Boolean Actualizar()
         {
-            Boolean Resultado = false;
-            String Sentencia;
-            Int32 FilasActualizadas = 0;
+            Boolean resultado = false;
 
             try
             {
-                Sentencia = @""; ;
-            }
-            catch (Exception)
-            {
+                using (SqlConnection conexion = new SqlConnection("Server=localhost;Port=3306;Database=laboratoriodental;Uid=root;Pwd=root;AllowUserVariables=True;"))
+                {
+                    string consulta = "UPDATE laboratoriodental.tratamientos SET Tratamiento = @Tratamiento, Estado = @Estado WHERE IDTratamiento = @IDTratamiento;\r\n";
 
-                Resultado = false;
+                    using (SqlCommand comando = new SqlCommand(consulta, conexion))
+                    {
+                        comando.Parameters.AddWithValue("@Tratamiento", _Tratamiento);
+                        comando.Parameters.AddWithValue("@Estado", _Estado);
+                        comando.Parameters.AddWithValue("@IDTratamiento", _IDTratamiento);
+
+                        conexion.Open();
+
+                        int filasAfectadas = comando.ExecuteNonQuery();
+
+                        if (filasAfectadas > 0)
+                        {
+                            resultado = true;
+                        }
+                    }
+                }
             }
-            return Resultado;
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al actualizar el tratamiento: " + ex.Message);
+            }
+
+            return resultado;
         }
 
         public Boolean Eliminar()
-        {
-            Boolean Resultado = false;
-            String Sentencia;
-            Int32 FilasEliminadas = 0;
+        { Boolean resultado = false;
 
             try
             {
-                Sentencia = @"";
-                if (true)
+                using (SqlConnection conexion = new SqlConnection("Server=localhost;Port=3306;Database=laboratoriodental;Uid=root;Pwd=root;AllowUserVariables=True;"))
                 {
-                    Resultado = true;
+                    string consulta = "DELETE FROM laboratoriodental.tratamientos WHERE IDTratamiento = @IDTratamiento";
+
+                    using (SqlCommand comando = new SqlCommand(consulta, conexion))
+                    {
+                        comando.Parameters.AddWithValue("@IDTratamiento", _IDTratamiento);
+
+                        conexion.Open();
+
+                        int filasAfectadas = comando.ExecuteNonQuery();
+
+                        if (filasAfectadas > 0)
+                        {
+                            resultado = true;
+                        }
+                    }
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                Resultado = false;
+                MessageBox.Show("Error al eliminar el tratamiento: " + ex.Message);
             }
 
-            return Resultado;
+            return resultado;
         }
     }
 }

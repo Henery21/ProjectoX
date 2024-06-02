@@ -35,7 +35,7 @@ namespace General2.GUI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InfoPacientes));
             this.DGInfoPaciente = new System.Windows.Forms.DataGridView();
-            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnHistorialConsulta = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -77,19 +77,20 @@ namespace General2.GUI
             this.DGInfoPaciente.Size = new System.Drawing.Size(626, 256);
             this.DGInfoPaciente.TabIndex = 87;
             // 
-            // btnBuscar
+            // btnHistorialConsulta
             // 
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
-            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Location = new System.Drawing.Point(253, 276);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(71, 23);
-            this.btnBuscar.TabIndex = 86;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnHistorialConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
+            this.btnHistorialConsulta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnHistorialConsulta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHistorialConsulta.FlatAppearance.BorderSize = 0;
+            this.btnHistorialConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHistorialConsulta.Location = new System.Drawing.Point(315, 276);
+            this.btnHistorialConsulta.Name = "btnHistorialConsulta";
+            this.btnHistorialConsulta.Size = new System.Drawing.Size(143, 23);
+            this.btnHistorialConsulta.TabIndex = 86;
+            this.btnHistorialConsulta.Text = "Historial Consulta ";
+            this.btnHistorialConsulta.UseVisualStyleBackColor = false;
+            this.btnHistorialConsulta.Click += new System.EventHandler(this.btnHistorialConsulta_Click);
             // 
             // btnEliminar
             // 
@@ -353,7 +354,7 @@ namespace General2.GUI
             this.Controls.Add(this.btnHistorialClinico);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.DGInfoPaciente);
-            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.btnHistorialConsulta);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnAgregar);
@@ -393,7 +394,7 @@ namespace General2.GUI
         #endregion
 
         private DataGridView DGInfoPaciente;
-        private Button btnBuscar;
+        private Button btnHistorialConsulta;
         private Button btnEliminar;
         private Button btnModificar;
         private Button btnAgregar;

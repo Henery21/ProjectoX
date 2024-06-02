@@ -17,21 +17,21 @@ namespace General2.GUI
 
         private DataTable ObtenerTratamientos()
         {
-            DataTable CTratamiento = new DataTable();
+            DataTable tratamientos = new DataTable();
 
             string connectionString = "Server=localhost;Port=3306;Database=laboratoriodental;Uid=root;Pwd=root;AllowUserVariables=True;";
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
-                string query = "SELECT IDEmpleado, Nombres, Apellidos, Telefono, Correo, Direccion, Puesto, Sexo FROM empleados";
+                string query = "SELECT IDTratamiento, Tratamiento, Estado FROM tratamientos";
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
                     connection.Open();
                     MySqlDataAdapter adapter = new MySqlDataAdapter(command);
-                    adapter.Fill(CTratamiento);
+                    adapter.Fill(tratamientos);
                 }
             }
 
-            return CTratamiento;
+            return tratamientos;
         }
 
         private void ConsultaTratamiento_Load(object sender, EventArgs e)
@@ -41,30 +41,41 @@ namespace General2.GUI
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            nuevoTratamiento.Tratamiento=cbTratamiento.SelectedItem.ToString();
-            nuevoTratamiento.Estado=cbEstado.SelectedItem.ToString();
-            bool resultado = nuevoTratamiento.Insertar();
-
-            if (resultado)
+            if (cbTratamiento.SelectedItem != null && cbEstado.SelectedItem != null)
             {
-                MessageBox.Show("Empleado insertado correctamente");
-                DGConsultaTratamiento.DataSource = ObtenerTratamientos(); // Actualizar DataGridView
+                CTratamiento nuevoTratamiento = new CTratamiento();
+
+                nuevoTratamiento.Tratamiento = cbTratamiento.SelectedItem.ToString();
+                nuevoTratamiento.Estado = cbEstado.SelectedItem.ToString();
+
+                bool resultado = nuevoTratamiento.Insertar();
+
+                if (resultado)
+                {
+                    MessageBox.Show("Tratamiento insertado correctamente");
+                    DGConsultaTratamiento.DataSource = ObtenerTratamientos(); // Actualizar DataGridView
+                }
+                else
+                {
+                    MessageBox.Show("Error al insertar el tratamiento");
+                }
             }
             else
             {
-                MessageBox.Show("Error al insertar el empleado");
+                MessageBox.Show("Por favor, seleccione un tratamiento y un estado.");
             }
+
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
             if (DGConsultaTratamiento.SelectedRows.Count > 0)
             {
-                string idEmpleado = DGConsultaTratamiento.SelectedRows[0].Cells["IDTratamiento"].Value.ToString();
+                string idTratamiento = DGConsultaTratamiento.SelectedRows[0].Cells["IDTratamiento"].Value.ToString();
 
-                if (!string.IsNullOrWhiteSpace(cbTratamiento.SelectedItem.ToString()) && !string.IsNullOrWhiteSpace(cbEstado.SelectedItem.ToString()))
+                if (!string.IsNullOrWhiteSpace(cbTratamiento.SelectedItem?.ToString()) && !string.IsNullOrWhiteSpace(cbEstado.SelectedItem?.ToString()))
                 {
-                    // Actualizar los datos del empleado
+
                     nuevoTratamiento.IDTratamiento = idTratamiento;
                     nuevoTratamiento.Tratamiento = cbTratamiento.SelectedItem.ToString();
                     nuevoTratamiento.Estado = cbEstado.SelectedItem.ToString();
@@ -96,7 +107,7 @@ namespace General2.GUI
         {
             if (DGConsultaTratamiento.SelectedRows.Count > 0)
             {
-                string idEmpleado = DGConsultaTratamiento.SelectedRows[0].Cells["IDTratamiento"].Value.ToString();
+                string idTratamiento = DGConsultaTratamiento.SelectedRows[0].Cells["IDTratamiento"].Value.ToString();
 
                 nuevoTratamiento.IDTratamiento = idTratamiento;
 
@@ -109,12 +120,12 @@ namespace General2.GUI
                 }
                 else
                 {
-                    MessageBox.Show("Error al eliminar el empleado");
+                    MessageBox.Show("Error al eliminar el tratamiento");
                 }
             }
             else
             {
-                MessageBox.Show("Por favor, seleccione un empleado para eliminar.");
+                MessageBox.Show("Por favor, seleccione un tratamiento para eliminar.");
             }
         }
         private void DGConsultaTratamiento_CellContentClick(object sender, DataGridViewCellEventArgs e)

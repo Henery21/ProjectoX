@@ -28,5 +28,11 @@ namespace General2.GUI
             HistorialClinico f = new HistorialClinico();
             f.ShowDialog();
         }
+
+        private void btnHistorialConsulta_Click(object sender, EventArgs e)
+        {
+            HistorialConsulta f = new HistorialConsulta();
+            f.ShowDialog();
+        }
     }
 }

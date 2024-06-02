@@ -16,13 +16,13 @@ namespace General2.CLS
 {
     internal class HConsulta
     {
-        String _IdConculta;
+        String _IDConsulta;
         String _IDHistorialClinico;
         String _MotivoConsulta;
         String _IDEmpleado;
         String _Estado;
 
-        public string IdConculta { get => _IdConculta; set => _IdConculta = value; }
+        public string IDConsulta { get => _IDConsulta; set => _IDConsulta = value; }
         public string IDHistorialClinico { get => _IDHistorialClinico; set => _IDHistorialClinico = value; }
         public string MotivoConsulta { get => _MotivoConsulta; set => _MotivoConsulta = value; }
         public string IDEmpleado { get => _IDEmpleado; set => _IDEmpleado = value; }
@@ -38,7 +38,8 @@ namespace General2.CLS
             try
             {
                 //FALTA CONSULTA PEDIR AL MORRO QUE HIZO LA DB
-                Sentencia = @" ";
+                Sentencia = @" INSERT INTO  laboratoriodental.historial_consultas ( Motivo_Consulta, Observaciones, IDEmpleado, Estado)
+                VALUES (@MotivoConsulta, @Observaciones, @IDEmpleado, @Estado); ";
                 DataLayer.DBoperacion Operacion = new DataLayer.DBoperacion();
                 FilasInsertadas = Operacion.EjecutarSentencia(Sentencia);
                 if (FilasInsertadas > 0)
@@ -63,7 +64,7 @@ namespace General2.CLS
 
             try
             {
-                Sentencia = @"";
+                Sentencia = @"  ";
             }
             catch (Exception)
             {

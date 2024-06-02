@@ -137,7 +137,7 @@ namespace General2.CLS
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = @"DELETE FROM Empleados WHERE IDEmpleado = @IDEmpleado";
+                    string query = @"";
                     MySqlCommand command = new MySqlCommand(query, connection);
                     command.Parameters.AddWithValue("@IDEmpleado", IDEmpleado);
 

@@ -49,7 +49,7 @@ namespace General2.GUI
             this.lblUsuario = new System.Windows.Forms.Label();
             this.tbNombreCompleto = new System.Windows.Forms.TextBox();
             this.lblNOmbreCompleto = new System.Windows.Forms.Label();
-            this.tbIdUsuario = new System.Windows.Forms.TextBox();
+            this.tbIdRol = new System.Windows.Forms.TextBox();
             this.lblIDUSuario = new System.Windows.Forms.Label();
             this.lblTItuloEmpleado = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -83,6 +83,7 @@ namespace General2.GUI
             this.btnEliminar.TabIndex = 113;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
@@ -97,6 +98,7 @@ namespace General2.GUI
             this.btnModificar.TabIndex = 112;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnAgregar
             // 
@@ -209,12 +211,12 @@ namespace General2.GUI
             this.lblNOmbreCompleto.TabIndex = 96;
             this.lblNOmbreCompleto.Text = "Nombre Completo";
             // 
-            // tbIdUsuario
+            // tbIdRol
             // 
-            this.tbIdUsuario.Location = new System.Drawing.Point(9, 139);
-            this.tbIdUsuario.Name = "tbIdUsuario";
-            this.tbIdUsuario.Size = new System.Drawing.Size(115, 20);
-            this.tbIdUsuario.TabIndex = 95;
+            this.tbIdRol.Location = new System.Drawing.Point(9, 139);
+            this.tbIdRol.Name = "tbIdRol";
+            this.tbIdRol.Size = new System.Drawing.Size(115, 20);
+            this.tbIdRol.TabIndex = 95;
             // 
             // lblIDUSuario
             // 
@@ -222,9 +224,9 @@ namespace General2.GUI
             this.lblIDUSuario.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIDUSuario.Location = new System.Drawing.Point(9, 114);
             this.lblIDUSuario.Name = "lblIDUSuario";
-            this.lblIDUSuario.Size = new System.Drawing.Size(76, 20);
+            this.lblIDUSuario.Size = new System.Drawing.Size(48, 20);
             this.lblIDUSuario.TabIndex = 94;
-            this.lblIDUSuario.Text = "Id Usuario";
+            this.lblIDUSuario.Text = "Id Rol";
             // 
             // lblTItuloEmpleado
             // 
@@ -288,7 +290,7 @@ namespace General2.GUI
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.tbNombreCompleto);
             this.Controls.Add(this.lblNOmbreCompleto);
-            this.Controls.Add(this.tbIdUsuario);
+            this.Controls.Add(this.tbIdRol);
             this.Controls.Add(this.lblIDUSuario);
             this.Controls.Add(this.lblTItuloEmpleado);
             this.Controls.Add(this.pictureBox4);
@@ -322,7 +324,7 @@ namespace General2.GUI
         private Label lblUsuario;
         private TextBox tbNombreCompleto;
         private Label lblNOmbreCompleto;
-        private TextBox tbIdUsuario;
+        private TextBox tbIdRol;
         private Label lblIDUSuario;
         private Label lblTItuloEmpleado;
         private PictureBox pictureBox4;

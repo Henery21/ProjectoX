@@ -34,5 +34,11 @@ namespace General2.GUI
             HistorialConsulta f = new HistorialConsulta();
             f.ShowDialog();
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+
+
+        }
     }
 }

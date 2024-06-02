@@ -1,8 +1,10 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 /*
  IDPaciente int AI PK 
 IDDireccion int 
@@ -21,7 +23,6 @@ namespace General2.CLS
 {
     internal class InfoPacientes
     {
-        String _IDpaciente;
         String _IDDireccion;
         String _Nombres;
         String _Apellidos;
@@ -33,7 +34,7 @@ namespace General2.CLS
         String _Estado;
         String _IDtratamiento;
 
-        public string IDpaciente { get => _IDpaciente; set => _IDpaciente = value; }
+        public string IDpaciente { get; set; }
         public string IDDireccion { get => _IDDireccion; set => _IDDireccion = value; }
         public string Nombres { get => _Nombres; set => _Nombres = value; }
         public string Apellidos { get => _Apellidos; set => _Apellidos = value; }
@@ -46,70 +47,122 @@ namespace General2.CLS
         public string IDtratamiento { get => _IDtratamiento; set => _IDtratamiento = value; }
 
 
-        public Boolean Insertar()
+        public bool Insertar()
         {
-            Boolean resultado = false;
-            String Sentencia;
-            Int32 FilasInsertadas = 0;
+            bool resultado = false;
 
             try
             {
-                //FALTA CONSULTA PEDIR AL MORRO QUE HIZO LA DB
-                Sentencia = @" ";
-                DataLayer.DBoperacion Operacion = new DataLayer.DBoperacion();
-                FilasInsertadas = Operacion.EjecutarSentencia(Sentencia);
-                if (FilasInsertadas > 0)
+                string connectionString = "Server=localhost;Port=3306;Database=nombre_basedatos;Uid=root;Pwd=contraseña;AllowUserVariables=True;";
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
-                    resultado = true;
+                    connection.Open();
+                    string query = @"INSERT INTO pacientes (IDDireccion, Nombres, Apellidos, Telefono, Correo, Direccion, FechaNacimiento, Sexo, Estado, IDTratamiento) 
+                            VALUES (@IDDireccion, @Nombres, @Apellidos, @Telefono, @Correo, @Direccion, @FechaNacimiento, @Sexo, @Estado, @IDTratamiento)";
+                    MySqlCommand command = new MySqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@IDDireccion", IDDireccion);
+                    command.Parameters.AddWithValue("@Nombres", Nombres);
+                    command.Parameters.AddWithValue("@Apellidos", Apellidos);
+                    command.Parameters.AddWithValue("@Telefono", Telefono);
+                    command.Parameters.AddWithValue("@Correo", Correo);
+                    command.Parameters.AddWithValue("@Direccion", Direccion);
+                    command.Parameters.AddWithValue("@FechaNacimiento", FechaNacimiento);
+                    command.Parameters.AddWithValue("@Sexo", Sexo);
+                    command.Parameters.AddWithValue("@Estado", Estado);
+                    command.Parameters.AddWithValue("@IDTratamiento", IDtratamiento);
+
+                    int filasInsertadas = command.ExecuteNonQuery();
+                    resultado = (filasInsertadas > 0);
                 }
-
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                throw new Exception("Error al insertar paciente.", ex);
+            }
 
+            return resultado;
+        }
+        public Boolean Actualizar()
+        {
+            Boolean resultado = false;
+
+            try
+            {
+                string connectionString = "Server=localhost;Port=3306;Database=nombre_basedatos;Uid=root;Pwd=contraseña;AllowUserVariables=True;";
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string query = @"UPDATE pacientes 
+                             SET IDDireccion = @IDDireccion, 
+                                 Nombres = @Nombres, 
+                                 Apellidos = @Apellidos, 
+                                 Telefono = @Telefono, 
+                                 Correo = @Correo, 
+                                 Direccion = @Direccion, 
+                                 FechaNacimiento = @FechaNacimiento, 
+                                 Sexo = @Sexo, 
+                                 Estado = @Estado, 
+                                 IDTratamiento = @IDTratamiento
+                             WHERE IDPaciente = @IDPaciente";
+                    MySqlCommand command = new MySqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@IDDireccion", IDDireccion);
+                    command.Parameters.AddWithValue("@Nombres", Nombres);
+                    command.Parameters.AddWithValue("@Apellidos", Apellidos);
+                    command.Parameters.AddWithValue("@Telefono", Telefono);
+                    command.Parameters.AddWithValue("@Correo", Correo);
+                    command.Parameters.AddWithValue("@Direccion", Direccion);
+                    command.Parameters.AddWithValue("@FechaNacimiento", FechaNacimiento);
+                    command.Parameters.AddWithValue("@Sexo", Sexo);
+                    command.Parameters.AddWithValue("@Estado", Estado);
+                    command.Parameters.AddWithValue("@IDPaciente", IDpaciente);
+
+                    int filasActualizadas = command.ExecuteNonQuery();
+                    if (filasActualizadas > 0)
+                    {
+                        resultado = true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al actualizar paciente: " + ex.Message);
                 resultado = false;
             }
+
             return resultado;
         }
 
-        public Boolean Actualizar()
-        {
-            Boolean Resultado = false;
-            String Sentencia;
-            Int32 FilasActualizadas = 0;
 
-            try
-            {
-                Sentencia = @""; 
-            }
-            catch (Exception)
-            {
 
-                Resultado = false;
-            }
-            return Resultado;
-        }
 
         public Boolean Eliminar()
         {
-            Boolean Resultado = false;
-            String Sentencia;
-            Int32 FilasEliminadas = 0;
+            Boolean resultado = false;
 
             try
             {
-                Sentencia = @"";
-                if (true)
+                string connectionString = "Server=localhost;Port=3306;Database=nombre_basedatos;Uid=root;Pwd=contraseña;AllowUserVariables=True;";
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
-                    Resultado = true;
+                    connection.Open();
+                    string query = @"DELETE FROM tabla_tratamientos WHERE IDTratamiento = @IDTratamiento";
+                    MySqlCommand command = new MySqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@IDPaciente", IDpaciente);
+
+                    int filasEliminadas = command.ExecuteNonQuery();
+                    if (filasEliminadas > 0)
+                    {
+                        resultado = true;
+                    }
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                Resultado = false;
+                Console.WriteLine("Error al eliminar tratamiento: " + ex.Message);
+                resultado = false;
             }
 
-            return Resultado;
+            return resultado;
         }
-    }
+    }      
 }

@@ -50,6 +50,8 @@
             pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
             barraauperior = new PictureBox();
+            btnReportes = new Button();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
@@ -65,6 +67,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)barraauperior).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox2
@@ -270,7 +273,7 @@
             // 
             plPrincipal.Location = new Point(157, 42);
             plPrincipal.Name = "plPrincipal";
-            plPrincipal.Size = new Size(742, 734);
+            plPrincipal.Size = new Size(800, 735);
             plPrincipal.TabIndex = 26;
             // 
             // btnClose
@@ -300,7 +303,7 @@
             // 
             pictureBox3.BackColor = Color.FromArgb(106, 212, 221);
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(10, 707);
+            pictureBox3.Location = new Point(9, 731);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(35, 35);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -318,12 +321,43 @@
             barraauperior.TabIndex = 3;
             barraauperior.TabStop = false;
             // 
+            // btnReportes
+            // 
+            btnReportes.Cursor = Cursors.Hand;
+            btnReportes.FlatAppearance.BorderColor = Color.FromArgb(248, 246, 227);
+            btnReportes.FlatAppearance.BorderSize = 0;
+            btnReportes.FlatAppearance.MouseDownBackColor = Color.FromArgb(122, 162, 227);
+            btnReportes.FlatAppearance.MouseOverBackColor = Color.FromArgb(122, 162, 227);
+            btnReportes.FlatStyle = FlatStyle.Popup;
+            btnReportes.ForeColor = Color.Black;
+            btnReportes.Image = (Image)resources.GetObject("btnReportes.Image");
+            btnReportes.ImageAlign = ContentAlignment.MiddleLeft;
+            btnReportes.Location = new Point(12, 400);
+            btnReportes.Name = "btnReportes";
+            btnReportes.Size = new Size(139, 35);
+            btnReportes.TabIndex = 28;
+            btnReportes.Text = "Reportes";
+            btnReportes.TextAlign = ContentAlignment.MiddleRight;
+            btnReportes.UseVisualStyleBackColor = true;
+            btnReportes.Click += btnReportes_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.FromArgb(151, 231, 225);
+            pictureBox1.Location = new Point(4, 400);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(145, 35);
+            pictureBox1.TabIndex = 27;
+            pictureBox1.TabStop = false;
+            // 
             // Principal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(248, 246, 227);
             ClientSize = new Size(932, 788);
+            Controls.Add(btnReportes);
+            Controls.Add(pictureBox1);
             Controls.Add(pictureBox3);
             Controls.Add(plPrincipal);
             Controls.Add(btnCitas);
@@ -364,6 +398,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)barraauperior).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -390,5 +425,7 @@
         private PictureBox pictureBox4;
         private PictureBox pictureBox3;
         private PictureBox barraauperior;
+        private Button btnReportes;
+        private PictureBox pictureBox1;
     }
 }

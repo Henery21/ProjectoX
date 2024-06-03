@@ -134,3 +134,4 @@ C:\Users\Usuario\Desktop\Desarrollo software ll\ProjectoX\General2\obj\Debug\Gen
 C:\Users\Usuario\Desktop\Desarrollo software ll\ProjectoX\General2\obj\Debug\General2.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Desktop\Desarrollo software ll\ProjectoX\General2\obj\Debug\General2.dll
 C:\Users\Usuario\Desktop\Desarrollo software ll\ProjectoX\General2\obj\Debug\General2.pdb
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\General2\obj\Debug\General2.GUI.Reportes.resources

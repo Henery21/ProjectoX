@@ -1,4 +1,5 @@
 ﻿using General2.CLS;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,29 @@ namespace General2.GUI
         public Detalletratamiento()
         {
             InitializeComponent();
+            this.Load += new EventHandler(this.infoDTratamiento_Load);
+        }
+        private DataTable ObtenerDtratamiento()
+        {
+            DataTable DTratamiento = new DataTable();
+            string connectionString = "Server=localhost;Port=3306;Database=laboratoriodental;Uid=root;Pwd=root;AllowUserVariables=True;";
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                string query = "SELECT * FROM laboratoriodental.detalle_tratamientos;";
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    connection.Open();
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+                    adapter.Fill(DTratamiento);
+                }
+            }
+
+            return DTratamiento;
+        }
+
+        private void infoDTratamiento_Load(object sender, EventArgs e)
+        {
+            DGdetalleTratamiento.DataSource = ObtenerDtratamiento();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)

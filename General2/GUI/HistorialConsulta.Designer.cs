@@ -38,7 +38,6 @@ namespace General2.GUI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HistorialConsulta));
             this.btnHistorialClinico = new System.Windows.Forms.Button();
             this.dGHistorialC = new System.Windows.Forms.DataGridView();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -86,20 +85,6 @@ namespace General2.GUI
             this.dGHistorialC.Name = "dGHistorialC";
             this.dGHistorialC.Size = new System.Drawing.Size(626, 285);
             this.dGHistorialC.TabIndex = 115;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
-            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Location = new System.Drawing.Point(317, 248);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(71, 23);
-            this.btnBuscar.TabIndex = 114;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // btnEliminar
             // 
@@ -299,7 +284,6 @@ namespace General2.GUI
             this.Controls.Add(this.lblHClinico);
             this.Controls.Add(this.btnHistorialClinico);
             this.Controls.Add(this.dGHistorialC);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnAgregar);
@@ -339,7 +323,6 @@ namespace General2.GUI
         private Button btnHistorialClinico;
         private DateTimePicker dateTimePicker1;
         private DataGridView dGHistorialC;
-        private Button btnBuscar;
         private Button btnEliminar;
         private Button btnModificar;
         private Button btnAgregar;

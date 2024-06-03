@@ -65,6 +65,9 @@ namespace SisBclinica.GUI
             Application.Exit();
         }
 
-       
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            AbrirFhijo(new General2.GUI.Reportes());
+        }
     }
 }

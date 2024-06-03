@@ -18,9 +18,32 @@ namespace General2.GUI
         public InfoUsuario()
         {
          InitializeComponent();
-
-
+            this.Load += new EventHandler(this.infoUsuarios_Load);
         }
+
+        private DataTable ObtenerUsers()
+        {
+            DataTable infoUsuarios = new DataTable();
+            string connectionString = "Server=localhost;Port=3306;Database=laboratoriodental;Uid=root;Pwd=root;AllowUserVariables=True;";
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                string query = "SELECT * FROM laboratoriodental.usuarios;";
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    connection.Open();
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+                    adapter.Fill(infoUsuarios);
+                }
+            }
+
+            return infoUsuarios;
+        }
+
+        private void infoUsuarios_Load(object sender, EventArgs e)
+        {
+            DGInfoUsuario.DataSource = ObtenerUsers();
+        }
+
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(tbIdRol.Text) &&
@@ -139,5 +162,6 @@ namespace General2.GUI
                 MessageBox.Show("Por favor, seleccione un usuario para eliminar.");
             }
         }
+
     }
 }

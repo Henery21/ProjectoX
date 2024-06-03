@@ -27,3 +27,26 @@ C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\p
 C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\Reportes\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\Reportes\bin\Debug\stdole.dll
 C:\Users\rober\OneDrive\Escritorio\desarrollo de sofware ll\LaboratorioDental2\proyectoX\ProjectoX\Reportes\obj\Debug\Reportes.csproj.CopyComplete
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\bin\Debug\Reportes.dll
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\bin\Debug\Reportes.pdb
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\bin\Debug\stdole.dll
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\obj\Debug\Reportes.csproj.AssemblyReference.cache
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\obj\Debug\Reportes.csproj.CoreCompileInputs.cache
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\obj\Debug\Reportes.csproj.Up2Date
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\obj\Debug\Reportes.dll
+C:\Users\Kike\Desktop\Xprojecto-main\ProjectoX\Reportes\obj\Debug\Reportes.pdb

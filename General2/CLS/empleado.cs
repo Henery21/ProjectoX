@@ -61,7 +61,7 @@ namespace General2.CLS
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = @"INSERT INTO Empleados (Nombres, Apellidos, Telefono, Correo, Direccion, Puesto, Sexo, Estado) 
+                    string query = @"INSERT INTO empleados (Nombres, Apellidos, Telefono, Correo, Direccion, Puesto, Sexo, Estado) 
                                     VALUES (@Nombres, @Apellidos, @Telefono, @Correo, @Direccion, @Puesto, @Sexo, @Estado)";
                     MySqlCommand command = new MySqlCommand(query, connection);
                     command.Parameters.AddWithValue("@Nombres", Nombres);
@@ -100,7 +100,7 @@ namespace General2.CLS
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = @"UPDATE Empleados 
+                    string query = @"UPDATE empleados 
                              SET IDDireccion = @IDDireccion, IDCargo = @IDCargo, IDPermiso = @IDPermiso,
                                  Nombres = @Nombres, Apellidos = @Apellidos, Telefono = @Telefono, 
                                  Correo = @Correo, Direccion = @Direccion, Puesto = @Puesto, 
@@ -146,7 +146,7 @@ namespace General2.CLS
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = @"DELETE FROM Empleados WHERE IDEmpleado = @IDEmpleado";
+                    string query = @"DELETE FROM empleados WHERE IDEmpleado = @IDEmpleado";
                     MySqlCommand command = new MySqlCommand(query, connection);
                     command.Parameters.AddWithValue("@IDEmpleado", IDEmpleado);
 

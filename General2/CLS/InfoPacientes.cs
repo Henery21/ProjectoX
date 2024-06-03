@@ -53,7 +53,7 @@ namespace General2.CLS
 
             try
             {
-                string connectionString = "Server=localhost;Port=3306;Database=nombre_basedatos;Uid=root;Pwd=contraseña;AllowUserVariables=True;";
+                string connectionString = "Server=localhost;Port=3306;Database=laboratoriodental;Uid=root;Pwd=root;AllowUserVariables=True;";
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
@@ -88,7 +88,7 @@ namespace General2.CLS
 
             try
             {
-                string connectionString = "Server=localhost;Port=3306;Database=nombre_basedatos;Uid=root;Pwd=contraseña;AllowUserVariables=True;";
+                string connectionString = "Server=localhost;Port=3306;Database=laboratoriodental;Uid=root;Pwd=root;AllowUserVariables=True;";
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
@@ -141,11 +141,11 @@ namespace General2.CLS
 
             try
             {
-                string connectionString = "Server=localhost;Port=3306;Database=nombre_basedatos;Uid=root;Pwd=contraseña;AllowUserVariables=True;";
+                string connectionString = "Server=localhost;Port=3306;Database=laboratoriodental;Uid=root;Pwd=root;AllowUserVariables=True;";
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = @"DELETE FROM tabla_tratamientos WHERE IDTratamiento = @IDTratamiento";
+                    string query = @"DELETE FROM pacientes WHERE IDPaciente = @IDPaciente";
                     MySqlCommand command = new MySqlCommand(query, connection);
                     command.Parameters.AddWithValue("@IDPaciente", IDpaciente);
 
@@ -158,7 +158,7 @@ namespace General2.CLS
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error al eliminar tratamiento: " + ex.Message);
+                Console.WriteLine("Error al eliminar pacientes: " + ex.Message);
                 resultado = false;
             }
 

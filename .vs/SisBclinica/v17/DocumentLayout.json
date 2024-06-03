@@ -1,10 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\",
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\kike\\desktop\\xprojecto-main\\projectox\\general2\\gui\\infopacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\usuario\\desktop\\desarrollo software ll\\projectox\\general2\\gui\\infoempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\gui\\infoempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\usuario\\desktop\\desarrollo software ll\\projectox\\general2\\gui\\infopacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\gui\\infopacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\usuario\\desktop\\desarrollo software ll\\projectox\\general2\\gui\\infousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\gui\\infousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\usuario\\desktop\\desarrollo software ll\\projectox\\general2\\gui\\historialconsulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\gui\\historialconsulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\usuario\\desktop\\desarrollo software ll\\projectox\\general2\\gui\\historialclinico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\gui\\historialclinico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\usuario\\desktop\\desarrollo software ll\\projectox\\general2\\gui\\detalletratamiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\gui\\detalletratamiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\usuario\\desktop\\desarrollo software ll\\projectox\\general2\\gui\\consultatratamiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\gui\\consultatratamiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|c:\\users\\usuario\\desktop\\desarrollo software ll\\projectox\\general2\\cls\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2105BF70-9C13-47E8-BBF1-67FCF10F9B7B}|General2\\General2.csproj|solutionrelative:general2\\cls\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +42,108 @@
       "DocumentGroups": [
         {
           "DockedWidth": 237,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InfoUsuario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\GUI\\InfoUsuario.cs",
+              "RelativeDocumentMoniker": "General2\\GUI\\InfoUsuario.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\GUI\\InfoUsuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "General2\\GUI\\InfoUsuario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T11:05:03.475Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InfoPacientes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\GUI\\InfoPacientes.cs",
+              "RelativeDocumentMoniker": "General2\\GUI\\InfoPacientes.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\GUI\\InfoPacientes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "General2\\GUI\\InfoPacientes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T11:05:02.49Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InfoEmpleado.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\GUI\\InfoEmpleado.cs",
+              "RelativeDocumentMoniker": "General2\\GUI\\InfoEmpleado.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\GUI\\InfoEmpleado.cs [Dise\u00F1o]",
+              "RelativeToolTip": "General2\\GUI\\InfoEmpleado.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T11:05:00.806Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HistorialConsulta.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\GUI\\HistorialConsulta.cs",
+              "RelativeDocumentMoniker": "General2\\GUI\\HistorialConsulta.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\GUI\\HistorialConsulta.cs [Dise\u00F1o]",
+              "RelativeToolTip": "General2\\GUI\\HistorialConsulta.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T11:04:57.185Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HistorialClinico.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\GUI\\HistorialClinico.cs",
+              "RelativeDocumentMoniker": "General2\\GUI\\HistorialClinico.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\GUI\\HistorialClinico.cs [Dise\u00F1o]",
+              "RelativeToolTip": "General2\\GUI\\HistorialClinico.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T11:04:55.879Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Detalletratamiento.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\GUI\\Detalletratamiento.cs",
+              "RelativeDocumentMoniker": "General2\\GUI\\Detalletratamiento.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\GUI\\Detalletratamiento.cs [Dise\u00F1o]",
+              "RelativeToolTip": "General2\\GUI\\Detalletratamiento.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T11:04:55.006Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ConsultaTratamiento.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\GUI\\ConsultaTratamiento.cs",
+              "RelativeDocumentMoniker": "General2\\GUI\\ConsultaTratamiento.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\GUI\\ConsultaTratamiento.cs [Dise\u00F1o]",
+              "RelativeToolTip": "General2\\GUI\\ConsultaTratamiento.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T11:04:53.633Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "empleado.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\CLS\\empleado.cs",
+              "RelativeDocumentMoniker": "General2\\CLS\\empleado.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Desarrollo software ll\\ProjectoX\\General2\\CLS\\empleado.cs",
+              "RelativeToolTip": "General2\\CLS\\empleado.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAAJwAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T05:01:12.455Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
@@ -27,30 +152,16 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InfoPacientes.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\GUI\\InfoPacientes.cs",
-              "RelativeDocumentMoniker": "General2\\GUI\\InfoPacientes.cs",
-              "ToolTip": "C:\\Users\\Kike\\Desktop\\Xprojecto-main\\ProjectoX\\General2\\GUI\\InfoPacientes.cs [Dise\u00F1o]",
-              "RelativeToolTip": "General2\\GUI\\InfoPacientes.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T20:52:28.672Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             }
           ]
         }

@@ -33,11 +33,11 @@ namespace General2.CLS
 
             try
             {
-                string connectionString = "Server=localhost;Port=3306;Database=nombre_basedatos;Uid=root;Pwd=contraseña;AllowUserVariables=True;";
+                string connectionString = "Server=localhost;Port=3306;Database=laboratoriodental;Uid=root;Pwd=root;AllowUserVariables=True;";
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = @"INSERT INTO tabla_tratamientos (DuracionT, Precio, Indicacion, Estado) 
+                    string query = @"INSERT INTO detalle_tratamientos (DuracionT, Precio, Indicacion, Estado) 
                                     VALUES (@DuracionT, @Precio, @Indicacion, @Estado)";
                     MySqlCommand command = new MySqlCommand(query, connection);
                     command.Parameters.AddWithValue("@DuracionT", DuracionT);
@@ -66,11 +66,11 @@ namespace General2.CLS
 
             try
             {
-                string connectionString = "Server=localhost;Port=3306;Database=nombre_basedatos;Uid=root;Pwd=contraseña;AllowUserVariables=True;";
+                string connectionString = "Server=localhost;Port=3306;Database=laboratoriodental;Uid=root;Pwd=root;AllowUserVariables=True;";
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = @"UPDATE tabla_tratamientos 
+                    string query = @"UPDATE detalle_tratamientos 
                                     SET DuracionT = @DuracionT, Precio = @Precio, Indicacion = @Indicacion, Estado = @Estado 
                                     WHERE IDTratamiento = @IDTratamiento";
                     MySqlCommand command = new MySqlCommand(query, connection);
@@ -102,11 +102,11 @@ namespace General2.CLS
 
             try
             {
-                string connectionString = "Server=localhost;Port=3306;Database=nombre_basedatos;Uid=root;Pwd=contraseña;AllowUserVariables=True;";
+                string connectionString = "Server=localhost;Port=3306;Database=laboratoriodental;Uid=root;Pwd=root;AllowUserVariables=True;";
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = @"DELETE FROM tabla_tratamientos WHERE IDTratamiento = @IDTratamiento";
+                    string query = @"DELETE FROM detalle_tratamientos WHERE IDTratamiento = @IDTratamiento";
                     MySqlCommand command = new MySqlCommand(query, connection);
                     command.Parameters.AddWithValue("@IDTratamiento", IDTratamiento);
 

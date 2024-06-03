@@ -51,7 +51,7 @@ namespace General2.CLS
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
-                    string consulta = "INSERT INTO tabla_usuarios (IDRol, IDEmpleado, NomCompleto, Usuario, Clave, TipoUsuario, Estado) " +
+                    string consulta = "INSERT INTO usuarios (IDRol, IDEmpleado, NomCompleto, Usuario, Clave, TipoUsuario, Estado) " +
                                        "VALUES (@IDRol, @IDEmpleado, @NomCompleto, @Usuario, @Clave, @TipoUsuario, @Estado)";
 
                     // Crear y configurar el comando SQL
@@ -96,7 +96,7 @@ namespace General2.CLS
                 {
                     //FAlta la consult
                     connection.Open();
-                    string consulta = "INSERT INTO tabla_usuarios (IDRol, IDEmpleado, NomCompleto, Usuario, Clave, TipoUsuario, Estado) " +
+                    string consulta = "INSERT INTO usuarios (IDRol, IDEmpleado, NomCompleto, Usuario, Clave, TipoUsuario, Estado) " +
                                        "VALUES (@IDRol, @IDEmpleado, @NomCompleto, @Usuario, @Clave, @TipoUsuario, @Estado)";
 
                     using (MySqlCommand comando = new MySqlCommand(consulta, connection))
@@ -137,9 +137,9 @@ namespace General2.CLS
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = @"";
+                    string query = @"DELETE FROM usuarios WHERE IDUsuario = @IDUsuario";
                     MySqlCommand command = new MySqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@IDEmpleado", IDEmpleado);
+                    command.Parameters.AddWithValue("@IDUsuario", IDUsuario);
 
                     int filasEliminadas = command.ExecuteNonQuery();
                     if (filasEliminadas > 0)
@@ -150,7 +150,7 @@ namespace General2.CLS
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error al eliminar empleado: " + ex.Message);
+                Console.WriteLine("Error al eliminar usuario: " + ex.Message);
                 resultado = false;
             }
 

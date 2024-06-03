@@ -1,9 +1,11 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
+using static Mysqlx.Crud.Order.Types;
 
 namespace General2.CLS
 {
@@ -25,73 +27,102 @@ namespace General2.CLS
 
         public Boolean Insertar()
         {
-            Boolean Resultado = false;
-            String Sentencia;
-            Int32 FilasInsertadas = 0;
+            bool resultado = false;
 
             try
             {
-                //FALTA CONSULTA PEDIR AL MORRO QUE HIZO LA DB
-                Sentencia = @"INSERT INTO productos * VALUES('" + _IDHistorialClinico + "','" + _IDPaciente + "','" + _Afecciones + "','" + _Observaciones + "','" + _Estado + "'); ";
-                DataLayer.DBoperacion Operacion = new DataLayer.DBoperacion();
-                FilasInsertadas = Operacion.EjecutarSentencia(Sentencia);
-                if (FilasInsertadas > 0)
+                string connectionString = "Server=localhost;Port=3306;Database=laboratoriodental;Uid=root;Pwd=root;AllowUserVariables=True;";
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
-                    Resultado = true;
+                    connection.Open();
+                    string query = @"INSERT INTO historial_clinicos (IDPaciente, Afecciones, Observaciones, Estado) 
+                                    VALUES (@IDPaciente, @Afecciones, @Observaciones, @Estado)";
+                    MySqlCommand command = new MySqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@IDPaciente", IDPaciente);
+                    command.Parameters.AddWithValue("@Afecciones", Afecciones);
+                    command.Parameters.AddWithValue("@Observacoiones", Observaciones);
+                    command.Parameters.AddWithValue("@Estado", Estado);
+
+                    int filasInsertadas = command.ExecuteNonQuery();
+                    if (filasInsertadas > 0)
+                    {
+                        resultado = true;
+                    }
                 }
-                //CONTIANCION 
-
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                Resultado = false;
+                Console.WriteLine("Error al insertar historial clinico: " + ex.Message);
+                resultado = false;
             }
-            return Resultado;
+
+            return resultado;
         }
         public Boolean Actualizar()
         {
-            Boolean Resultado = false;
-            String Sentencia;
-            Int32 FilasActualizadas = 0;
+            bool resultado = false;
 
             try
             {
-                Sentencia = @"UPDATE productos SET IDHistorialClinico = '" + _IDHistorialClinico +
-                    "', IDPaciente = '" + _IDPaciente +
-                    "', Afecciones = '" + _Afecciones +
-                    "', Observaciones = '" + _Observaciones +
-                    "', Estado = '" + _Estado +
-                    "' WHERE condicion_de_actualizacion;"; ;
-            }
-            catch (Exception)
-            {
+                string connectionString = "Server=localhost;Port=3306;Database=laboratoriodental;Uid=root;Pwd=root;AllowUserVariables=True;";
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string query = @"UPDATE historial_clinicos 
+                             SET IDPaciente = @IDPaciente, Afecciones = @Afecciones, Observaciones = @Observarciones,
+                                 Estado = @Estado
+                             WHERE IDHistorialClinico = @IDHistorialClinico";
+                    MySqlCommand command = new MySqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@IDPaciente", IDPaciente);
+                    command.Parameters.AddWithValue("@Afecciones", Afecciones);
+                    command.Parameters.AddWithValue("@Observaciones", Observaciones);
+                    command.Parameters.AddWithValue("@Estado", Estado);
+                    command.Parameters.AddWithValue("@IDHistorialClinico", IDHistorialClinico);
 
-                Resultado = false;
+                    int filasActualizadas = command.ExecuteNonQuery();
+                    if (filasActualizadas > 0)
+                    {
+                        resultado = true;
+                    }
+                }
             }
-            return Resultado;
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al actualizar historial clinico: " + ex.Message);
+                resultado = false;
+            }
+
+            return resultado;
         }
 
         public Boolean Eliminar()
         {
-            Boolean Resultado = false;
-            String Sentencia;
-            Int32 FilasEliminadas = 0;
+            bool resultado = false;
 
             try
             {
-                Sentencia = @"";
-                if (true)
+                string connectionString = "Server=localhost;Port=3306;Database=laboratoriodental;Uid=root;Pwd=root;AllowUserVariables=True;";
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
-                    Resultado = true;
+                    connection.Open();
+                    string query = @"DELETE FROM historial_clinicos WHERE IDHistorialClinico = @IDHistorialClinico";
+                    MySqlCommand command = new MySqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@IDHistorialClinico", IDHistorialClinico);
+
+                    int filasEliminadas = command.ExecuteNonQuery();
+                    if (filasEliminadas > 0)
+                    {
+                        resultado = true;
+                    }
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                Resultado = false;
+                Console.WriteLine("Error al eliminar historial clinico: " + ex.Message);
+                resultado = false;
             }
 
-            return Resultado;
+            return resultado;
         }
     }
 }
